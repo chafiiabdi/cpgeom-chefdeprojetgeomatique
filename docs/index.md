@@ -4,7 +4,7 @@ title: Documentation CPGEOM
 
 # Documentation CPGEOM
 
-![Bannière CPGEOM](images/banner-cpgeom.png)
+![Bannière CPGEOM](images/idgeo.jpeg)
 
 Bienvenue dans ma documentation de formation **Chef de projet géomatique**.
 
