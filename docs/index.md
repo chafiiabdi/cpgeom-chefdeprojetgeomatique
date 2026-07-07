@@ -2,290 +2,161 @@
 title: Documentation CPGEOM
 description: Notes, exercices et ressources pour la formation Chef de projet géomatique.
 nav_order: 1
-permalink: /
 ---
 
-<style>
-.cpgeom-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(240px, 0.85fr);
-  gap: 1.5rem;
-  align-items: center;
-  padding: 1.5rem;
-  margin: 1rem 0 2rem;
-  border: 1px solid #d9e2ec;
-  border-radius: 8px;
-  background: linear-gradient(135deg, #f7fbff 0%, #edf7f3 55%, #fff8ec 100%);
-}
-
-.cpgeom-hero img {
-  width: 100%;
-  max-height: 280px;
-  object-fit: cover;
-  border-radius: 8px;
-  border: 1px solid #d9e2ec;
-}
-
-.cpgeom-eyebrow {
-  margin: 0 0 .45rem;
-  color: #276749;
-  font-size: .78rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.cpgeom-hero h2 {
-  margin: 0 0 .75rem;
-  font-size: 2rem;
-  line-height: 1.15;
-}
-
-.cpgeom-hero p {
-  margin-bottom: 1rem;
-}
-
-.cpgeom-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .7rem;
-}
-
-.cpgeom-kpis,
-.cpgeom-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0 2rem;
-}
-
-.cpgeom-kpi,
-.cpgeom-card {
-  border: 1px solid #d9e2ec;
-  border-radius: 8px;
-  background: #ffffff;
-}
-
-.cpgeom-kpi {
-  padding: 1rem;
-  border-left: 4px solid #2c7a7b;
-}
-
-.cpgeom-kpi strong {
-  display: block;
-  margin-bottom: .25rem;
-  color: #102a43;
-  font-size: 1.3rem;
-}
-
-.cpgeom-card {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  overflow: hidden;
-  color: inherit;
-  text-decoration: none;
-  box-shadow: 0 8px 20px rgba(15, 23, 42, .06);
-  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
-}
-
-.cpgeom-card:hover {
-  border-color: #2c7a7b;
-  box-shadow: 0 12px 24px rgba(15, 23, 42, .1);
-  text-decoration: none;
-  transform: translateY(-2px);
-}
-
-.cpgeom-card img,
-.cpgeom-card-visual {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  background: #edf2f7;
-}
-
-.cpgeom-card-visual {
-  display: grid;
-  place-items: center;
-  color: #102a43;
-  font-weight: 800;
-  letter-spacing: 0;
-}
-
-.cpgeom-card-body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  gap: .5rem;
-  padding: 1rem;
-}
-
-.cpgeom-card h3 {
-  margin: 0;
-  font-size: 1.05rem;
-  line-height: 1.3;
-}
-
-.cpgeom-card p {
-  margin: 0;
-  color: #5c5962;
-  font-size: .94rem;
-}
-
-.cpgeom-chip {
-  display: inline-flex;
-  width: fit-content;
-  padding: .2rem .55rem;
-  border-radius: 999px;
-  background: #f1f5f9;
-  color: #334e68;
-  font-size: .75rem;
-  font-weight: 700;
-}
-
-@media (max-width: 720px) {
-  .cpgeom-hero {
-    grid-template-columns: 1fr;
-    padding: 1rem;
-  }
-
-  .cpgeom-hero h2 {
-    font-size: 1.55rem;
-  }
-}
-</style>
-
 # Documentation CPGEOM
-{: .fs-9 }
 
-Notes de cours, exercices, fiches de révision et ressources techniques pour la formation **Chef de projet géomatique**.
-{: .fs-6 .fw-300 }
+![Bannière CPGEOM](images/idgeo.jpeg)
 
-<section class="cpgeom-hero">
-  <div>
-    <p class="cpgeom-eyebrow">Formation CPGEOM</p>
-    <h2>Un espace clair pour apprendre, pratiquer et retrouver les notions importantes.</h2>
-    <p>
-      Cette documentation rassemble progressivement les contenus utiles pour conduire un projet géomatique :
-      méthodologie, données spatiales, PostgreSQL/PostGIS, QGIS, Python, télédétection et contrôle qualité.
-    </p>
-    <div class="cpgeom-actions">
-      <a class="btn btn-primary" href="#sommaire-general">Explorer les modules</a>
-      <a class="btn" href="#parcours-de-lecture">Suivre un parcours</a>
-    </div>
-  </div>
-  <img src="images/idgeo.jpeg" alt="Bannière CPGEOM">
-</section>
+Bienvenue dans ma documentation de formation **CPGEOM - Chef de projet géomatique**.
 
-## Repères rapides
+Ce site centralise mes **notes de cours**, mes **exercices**, mes **fiches de révision**, mes **ressources techniques** et mes **travaux pratiques** autour de la géomatique, des bases de données spatiales, de la télédétection, de Python, de QGIS et de la gestion de projet.
 
-<div class="cpgeom-kpis">
-  <div class="cpgeom-kpi">
-    <strong>8 modules</strong>
-    Cours organisés par thèmes pour naviguer rapidement.
-  </div>
-  <div class="cpgeom-kpi">
-    <strong>1 fil rouge</strong>
-    Passer du cadrage projet à la production géomatique.
-  </div>
-  <div class="cpgeom-kpi">
-    <strong>Usage pro</strong>
-    Conserver une base de connaissances réutilisable.
-  </div>
-</div>
+---
+
+## Vue d'ensemble
+
+| Repère | Description |
+|---|---|
+| **Objectif** | Organiser progressivement les connaissances acquises pendant la formation CPGEOM. |
+| **Contenu** | Cours, exercices, ressources, fiches et travaux pratiques. |
+| **Usage** | Retrouver rapidement les notions importantes et construire un support professionnel réutilisable. |
+| **Fil conducteur** | Cadrer un projet, structurer les données, contrôler la qualité, analyser et produire des livrables. |
+
+---
 
 ## Sommaire général
 
-<div class="cpgeom-card-grid">
-  <a class="cpgeom-card" href="{{ '/gp.html' | relative_url }}">
-    <img src="images/gestion-de-projets.png" alt="Gestion de projet">
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">Projet</span>
-      <h3>Gestion de projet</h3>
-      <p>Cadrage, acteurs, planification, suivi, risques, livrables et communication projet.</p>
-    </div>
-  </a>
-
-  <a class="cpgeom-card" href="{{ '/bd.html' | relative_url }}">
-    <img src="images/postgis_postgreSQL.jpg" alt="PostgreSQL et PostGIS">
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">Base de données</span>
-      <h3>PostgreSQL &amp; PostGIS</h3>
-      <p>SQL, modélisation, schémas, géométries, index spatiaux et administration BDD.</p>
-    </div>
-  </a>
-
-  <a class="cpgeom-card" href="{{ '/cq.html' | relative_url }}">
-    <div class="cpgeom-card-visual">Contrôle qualité</div>
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">Qualité</span>
-      <h3>Contrôle qualité</h3>
-      <p>Méthodes de validation, vérification des données et suivi de la fiabilité.</p>
-    </div>
-  </a>
-
-  <a class="cpgeom-card" href="{{ '/fe.html' | relative_url }}">
-    <div class="cpgeom-card-visual">Formats SIG</div>
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">Formats</span>
-      <h3>Formats ESRI</h3>
-      <p>Shapefile, geodatabase, formats d'échange et bonnes pratiques d'interopérabilité.</p>
-    </div>
-  </a>
-
-  <a class="cpgeom-card" href="{{ '/tel.html' | relative_url }}">
-    <img src="images/teledetection.png" alt="Télédétection">
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">Raster</span>
-      <h3>Télédétection</h3>
-      <p>Images satellites, bandes spectrales, indices, classification et traitements raster.</p>
-    </div>
-  </a>
-
-  <a class="cpgeom-card" href="{{ '/pp.html' | relative_url }}">
-    <img src="images/pyqgis.png" alt="Python et PyQGIS">
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">Automatisation</span>
-      <h3>Python &amp; PyQGIS</h3>
-      <p>Scripts, traitements QGIS, bibliothèques géomatiques et automatisation des tâches.</p>
-    </div>
-  </a>
-
-  <a class="cpgeom-card" href="{{ '/com.html' | relative_url }}">
-    <div class="cpgeom-card-visual">Données</div>
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">Interop</span>
-      <h3>Données &amp; interopérabilité</h3>
-      <p>Cycle de vie des données, VRT, métadonnées, droit informatique et partage.</p>
-    </div>
-  </a>
-
-  <a class="cpgeom-card" href="{{ '/3d.html' | relative_url }}">
-    <img src="images/3d.png" alt="Géomatique et 3D">
-    <div class="cpgeom-card-body">
-      <span class="cpgeom-chip">SIG</span>
-      <h3>Géomatique, SIG &amp; 3D</h3>
-      <p>QGIS, projections, couches, analyse spatiale, cartographie et représentation 3D.</p>
-    </div>
-  </a>
-</div>
-
-## Parcours de lecture
-
-| Étape | Objectif | Modules conseillés |
+| Thématique | Description | Accès |
 |---|---|---|
-| 1 | Comprendre le besoin et cadrer le travail | [Gestion de projet]({{ '/gp.html' | relative_url }}) |
-| 2 | Structurer les données et les formats | [PostGIS]({{ '/bd.html' | relative_url }}) · [Formats ESRI]({{ '/fe.html' | relative_url }}) |
-| 3 | Contrôler et fiabiliser les données | [Contrôle qualité]({{ '/cq.html' | relative_url }}) · [Données & interopérabilité]({{ '/com.html' | relative_url }}) |
-| 4 | Analyser, automatiser et produire | [Python & PyQGIS]({{ '/pp.html' | relative_url }}) · [Télédétection]({{ '/tel.html' | relative_url }}) |
-| 5 | Valoriser les résultats | [Géomatique, SIG & 3D]({{ '/3d.html' | relative_url }}) |
+| **Gestion de projet** | Méthodes, organisation, cadrage, planification, suivi et livrables | [Voir le cours](gp.md) |
+| **Base de données & PostGIS** | PostgreSQL, PostGIS, SQL, schémas, géométries et index spatiaux | [Voir le cours](bd.md) |
+| **Contrôle qualité** | Qualité des données, méthodes de contrôle, validation et fiabilisation | [Voir le cours](cq.md) |
+| **Formats ESRI** | Shapefile, geodatabase, formats SIG et échanges de données | [Voir le cours](fe.md) |
+| **Télédétection** | Images satellites, indices, classification et traitements raster | [Voir le cours](tel.md) |
+| **Python & PyQGIS** | Automatisation, scripts Python, traitements QGIS et bibliothèques géomatiques | [Voir le cours](pp.md) |
+| **Données & interopérabilité** | VRT, droit informatique, cycle de vie des données et métadonnées | [Voir le cours](com.md) |
+| **Géomatique, SIG & 3D** | QGIS, cartographie, projections, couches, analyse spatiale et représentation 3D | [Voir le cours](3d.md) |
 
-## Ce que je centralise ici
+---
 
-- Des notes de cours classées par thématique.
-- Des exercices et travaux pratiques pour retrouver rapidement les manipulations.
-- Des fiches de révision pour consolider les notions importantes.
-- Des ressources techniques sur QGIS, PostgreSQL/PostGIS, Python et les données spatiales.
-- Une trace professionnelle des compétences développées pendant la formation.
+## Parcours conseillé
+
+| Étape | Objectif | Modules à consulter |
+|---|---|---|
+| **1** | Comprendre le besoin et cadrer le travail | [Gestion de projet](gp.md) |
+| **2** | Structurer et stocker les données | [Base de données & PostGIS](bd.md), [Formats ESRI](fe.md) |
+| **3** | Vérifier la qualité des données | [Contrôle qualité](cq.md), [Données & interopérabilité](com.md) |
+| **4** | Automatiser et analyser | [Python & PyQGIS](pp.md), [Télédétection](tel.md) |
+| **5** | Produire et valoriser les résultats | [Géomatique, SIG & 3D](3d.md) |
+
+---
+
+## Mes grandes thématiques
+
+### Gestion de projet
+
+![Gestion de projet](images/gestion-de-projets.png)
+
+Cette partie regroupe les méthodes nécessaires pour conduire un projet géomatique de manière structurée.
+
+On y retrouve notamment :
+
+- le cadrage du besoin ;
+- la rédaction d'une note de cadrage ;
+- l'identification des acteurs ;
+- la planification ;
+- le suivi des tâches ;
+- la gestion des risques ;
+- la communication projet ;
+- la rédaction de livrables.
+
+[Accéder à la partie Gestion de projet](gp.md)
+
+---
+
+### Base de données & PostGIS
+
+![PostgreSQL & PostGIS](images/postgis_postgreSQL.jpg)
+
+Cette section est consacrée aux bases de données relationnelles et spatiales.
+
+Elle contient des notions sur :
+
+- PostgreSQL ;
+- PostGIS ;
+- les schémas ;
+- les tables ;
+- les clés primaires et étrangères ;
+- les requêtes SQL ;
+- les géométries ;
+- les index spatiaux ;
+- l'administration d'une base de données géographique.
+
+[Accéder à la partie Base de données & PostGIS](bd.md)
+
+---
+
+### Python & PyQGIS
+
+![Python et PyQGIS](images/pyqgis.png)
+
+Cette partie présente l'utilisation de Python pour automatiser les traitements géomatiques.
+
+Les objectifs sont :
+
+- comprendre les bases de Python ;
+- manipuler des fichiers ;
+- utiliser des bibliothèques géomatiques ;
+- automatiser des traitements QGIS ;
+- créer des scripts PyQGIS ;
+- gagner du temps dans les tâches répétitives.
+
+[Accéder à la partie Python & PyQGIS](pp.md)
+
+---
+
+### Télédétection
+
+![Télédétection](images/teledetection.png)
+
+Cette section regroupe les notions liées aux images satellites et aux traitements raster.
+
+Elle contient par exemple :
+
+- les images Sentinel ;
+- les bandes spectrales ;
+- les compositions colorées ;
+- le NDVI ;
+- la classification d'images ;
+- les traitements raster ;
+- l'analyse de l'occupation du sol.
+
+[Accéder à la partie Télédétection](tel.md)
+
+---
+
+### Géomatique, SIG & 3D
+
+![Géomatique et 3D](images/3d.png)
+
+Cette partie regroupe les notions principales liées aux systèmes d'information géographique.
+
+On y trouve :
+
+- QGIS ;
+- la cartographie ;
+- les projections ;
+- les couches vecteur ;
+- les couches raster ;
+- les traitements spatiaux ;
+- l'analyse territoriale ;
+- la production de cartes ;
+- la représentation 3D.
+
+[Accéder à la partie Géomatique, SIG & 3D](3d.md)
+
+---
 
 ## Compétences travaillées
 
@@ -293,20 +164,27 @@ Notes de cours, exercices, fiches de révision et ressources techniques pour la 
 |---|---|
 | Gestion de projet géomatique | Intermédiaire à avancé |
 | PostgreSQL / PostGIS | Intermédiaire |
-| QGIS et analyse spatiale | Avancé |
-| Python et PyQGIS | Progressif |
+| QGIS | Avancé |
+| Python | Progressif |
+| PyQGIS | Progressif |
 | Télédétection | Intermédiaire |
 | Contrôle qualité des données | Intermédiaire |
 | Documentation technique | Professionnel |
 
+---
+
 ## Ressources utiles
 
-| Outil | Utilisation dans la formation |
+| Outil | Utilisation |
 |---|---|
-| QGIS | Consultation, analyse et production cartographique |
-| PostgreSQL / PostGIS | Stockage, requêtes spatiales et administration de données |
-| Python / PyQGIS | Automatisation et traitements répétitifs |
-| GitHub Pages | Publication et structuration de la documentation |
-| Markdown | Rédaction claire, légère et versionnable |
+| **QGIS** | Consultation, analyse spatiale et production cartographique |
+| **PostgreSQL / PostGIS** | Stockage, requêtes spatiales et administration de données |
+| **Python / PyQGIS** | Automatisation et traitements répétitifs |
+| **GitHub Pages** | Publication de la documentation |
+| **Markdown** | Rédaction claire, légère et versionnable |
 
-> Cette page sert de point d'entrée. Elle évoluera au fur et à mesure de l'ajout des cours, exercices et projets.
+---
+
+## À retenir
+
+Cette page est le point d'entrée de la documentation. Elle évoluera au fur et à mesure de l'ajout des cours, des exercices et des projets réalisés pendant la formation.
