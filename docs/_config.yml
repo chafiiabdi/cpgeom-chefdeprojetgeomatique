@@ -1,14 +1,5 @@
 title: Documentation CPGEOM
 description: Chef de projet géomatique
-remote_theme: just-the-docs/just-the-docs
+theme: jekyll-theme-cayman
 
-plugins:
-  - jekyll-remote-theme
-
-search_enabled: true
-
-aux_links:
-  "Voir le dépôt GitHub":
-    - "https://github.com/chafiiabdi/cpgeom-chefdeprojetgeomatique"
-
-color_scheme: light
+show_downloads: false
