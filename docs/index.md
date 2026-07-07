@@ -31,7 +31,7 @@ Elle me permet de :
 | Thématique | Description | Accès |
 |---|---|---|
 | Gestion de projet | Méthodes, organisation, cadrage, planification et suivi de projet | [Voir le cours](gp.md) |
-| Base de données & PostGIS | Administration BDD, SQL, PostgreSQL, PostGIS et données spatiales | [Voir le cours](cours3.md) |
+| Base de données & PostGIS | Administration BDD, SQL, PostgreSQL, PostGIS et données spatiales | [Voir le cours](bd.md) |
 | Contrôle qualité | Méthodes de contrôle, qualité des données et validation | [Voir le cours](cq.md) |
 | Format ESRI | Shapefile, Geodatabase, formats SIG et échanges de données | [Voir le cours](fe.md) |
 | Télédétection | Images satellites, indices, classification et traitements raster | [Voir le cours](tel.md) |

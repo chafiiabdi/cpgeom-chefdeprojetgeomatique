@@ -1,4 +1,4 @@
-# CPGEOM - Chef de projet géomatique
+# Données & interopérabilité | VRT, droit informatique, cycle de vie des données, métadonnées
 
 Bienvenue sur mon site de documentation pour la formation **CPGEOM**.
 

@@ -1,4 +1,4 @@
-# CPGEOM - Chef de projet géomatique
+# Format ESRI | Shapefile, Geodatabase, formats SIG et échanges de données
 
 Bienvenue sur mon site de documentation pour la formation **CPGEOM**.
 

@@ -1,4 +1,4 @@
-# CPGEOM - Chef de projet géomatique
+# Contrôle qualité | Méthodes de contrôle, qualité des données et validation
 
 Bienvenue sur mon site de documentation pour la formation **CPGEOM**.
 

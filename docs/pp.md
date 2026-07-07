@@ -1,4 +1,4 @@
-# CPGEOM - Chef de projet géomatique
+# Python & PyQGIS | Automatisation, scripts Python, traitements QGIS
 
 Bienvenue sur mon site de documentation pour la formation **CPGEOM**.
 

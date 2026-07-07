@@ -1,4 +1,4 @@
-# CPGEOM - Chef de projet géomatique
+# Gestion de projet | Méthodes, organisation, cadrage, planification et suivi de projet
 
 Bienvenue sur mon site de documentation pour la formation **CPGEOM**.
 

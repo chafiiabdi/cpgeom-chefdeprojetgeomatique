@@ -1,4 +1,4 @@
-# Télédétection | Images satellites, indices, classification et traitements raster 
+# Base de données & PostGIS | Administration BDD, SQL, PostgreSQL, PostGIS et données spatiales 
 
 Bienvenue sur mon site de documentation pour la formation **CPGEOM**.
 
