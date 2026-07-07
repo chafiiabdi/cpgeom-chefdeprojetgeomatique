@@ -44,7 +44,7 @@ Elle me permet de :
 
 ### Gestion de projet
 
-![Gestion de projet](images/gestion-projet.png)
+![Gestion de projet](images/gestion-de-projets.png)
 
 Cette partie regroupe les méthodes nécessaires pour conduire un projet géomatique de manière structurée.
 
@@ -65,7 +65,7 @@ On y retrouve notamment :
 
 ### Base de données & PostGIS
 
-![PostGIS](images/postgis.png)
+![PostgreSQL & PostGIS](images/postgis_postgreSQL.jpg)
 
 Cette section est consacrée aux bases de données relationnelles et spatiales.
 
@@ -87,7 +87,7 @@ Elle contient des notions sur :
 
 ### Python & PyQGIS
 
-![Python et PyQGIS](images/python.png)
+![Python et PyQGIS](images/pyqgis.png)
 
 Cette partie présente l’utilisation de Python pour automatiser les traitements géomatiques.
 
@@ -126,7 +126,7 @@ Elle contient par exemple :
 
 ### Géomatique et SIG
 
-![QGIS](images/qgis.png)
+![QGIS](images/q.png)
 
 Cette partie regroupe les notions principales liées aux systèmes d’information géographique.
 
@@ -146,6 +146,7 @@ On y trouve :
 ---
 
 ## Compétences travaillées
+![3D](images/3d.png)
 
 | Compétence | Niveau visé |
 |---|---|
