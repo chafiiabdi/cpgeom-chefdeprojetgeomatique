@@ -1,0 +1,41 @@
+﻿.wy-side-nav-search {
+    background-color: #589632;
+}
+
+.wy-nav-side {
+    background: #2b2b2b;
+}
+
+.wy-menu-vertical p.caption {
+    color: #9fd36b;
+    font-weight: bold;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: #589632;
+    color: white;
+}
+
+.wy-nav-content {
+    max-width: 1100px;
+}
+
+h1 {
+    color: #3c7d22;
+    border-bottom: 2px solid #e6e6e6;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #4f8f2f;
+    margin-top: 35px;
+}
+
+a {
+    color: #3c7d22;
+}
+
+table.docutils th {
+    background-color: #589632;
+    color: white;
+}
