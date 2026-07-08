@@ -1,162 +1,103 @@
 ---
 title: Documentation CPGEOM
-description: Notes, exercices et ressources pour la formation Chef de projet géomatique.
-nav_order: 1
 ---
 
 # Documentation CPGEOM
 
-![Bannière CPGEOM](images/idgeo.jpeg)
+Bienvenue dans la documentation de formation **CPGEOM - Chef de projet géomatique**.
 
-Bienvenue dans ma documentation de formation **CPGEOM - Chef de projet géomatique**.
+Cette documentation sert de carnet de cours, de support de révision et de base de ressources techniques. Elle regroupe les notions essentielles pour conduire un projet géomatique : cadrage, données spatiales, bases de données, contrôle qualité, automatisation, télédétection et production cartographique.
 
-Ce site centralise mes **notes de cours**, mes **exercices**, mes **fiches de révision**, mes **ressources techniques** et mes **travaux pratiques** autour de la géomatique, des bases de données spatiales, de la télédétection, de Python, de QGIS et de la gestion de projet.
+![Gestion de projet géomatique](images/gestion-de-projets.jpg)
 
----
+```{toctree}
+:maxdepth: 2
+:caption: Modules de formation
 
-## Vue d'ensemble
+gp
+cours3
+cq
+fe
+tel
+pp
+com
+3d
+```
 
-| Repère | Description |
+## Objectifs du site
+
+| Objectif | Ce que cela permet |
 |---|---|
-| **Objectif** | Organiser progressivement les connaissances acquises pendant la formation CPGEOM. |
-| **Contenu** | Cours, exercices, ressources, fiches et travaux pratiques. |
-| **Usage** | Retrouver rapidement les notions importantes et construire un support professionnel réutilisable. |
-| **Fil conducteur** | Cadrer un projet, structurer les données, contrôler la qualité, analyser et produire des livrables. |
-
----
-
-## Sommaire général
-
-| Thématique | Description | Accès |
-|---|---|---|
-| **Gestion de projet** | Méthodes, organisation, cadrage, planification, suivi et livrables | [Voir le cours](gp.md) |
-| **Base de données & PostGIS** | PostgreSQL, PostGIS, SQL, schémas, géométries et index spatiaux | [Voir le cours](bd.md) |
-| **Contrôle qualité** | Qualité des données, méthodes de contrôle, validation et fiabilisation | [Voir le cours](cq.md) |
-| **Formats ESRI** | Shapefile, geodatabase, formats SIG et échanges de données | [Voir le cours](fe.md) |
-| **Télédétection** | Images satellites, indices, classification et traitements raster | [Voir le cours](tel.md) |
-| **Python & PyQGIS** | Automatisation, scripts Python, traitements QGIS et bibliothèques géomatiques | [Voir le cours](pp.md) |
-| **Données & interopérabilité** | VRT, droit informatique, cycle de vie des données et métadonnées | [Voir le cours](com.md) |
-| **Géomatique, SIG & 3D** | QGIS, cartographie, projections, couches, analyse spatiale et représentation 3D | [Voir le cours](3d.md) |
-
----
+| **Centraliser les cours** | Retrouver rapidement les notions importantes de la formation. |
+| **Structurer les apprentissages** | Classer les contenus par thème et par usage professionnel. |
+| **Préparer les révisions** | Identifier les compétences, méthodes et outils à maîtriser. |
+| **Documenter les travaux pratiques** | Garder une trace claire des exercices, scripts et manipulations. |
+| **Construire un support professionnel** | Réutiliser les fiches, procédures et ressources dans de futurs projets. |
 
 ## Parcours conseillé
 
-| Étape | Objectif | Modules à consulter |
+| Étape | Intention | Module |
 |---|---|---|
-| **1** | Comprendre le besoin et cadrer le travail | [Gestion de projet](gp.md) |
-| **2** | Structurer et stocker les données | [Base de données & PostGIS](bd.md), [Formats ESRI](fe.md) |
-| **3** | Vérifier la qualité des données | [Contrôle qualité](cq.md), [Données & interopérabilité](com.md) |
-| **4** | Automatiser et analyser | [Python & PyQGIS](pp.md), [Télédétection](tel.md) |
-| **5** | Produire et valoriser les résultats | [Géomatique, SIG & 3D](3d.md) |
+| **1** | Cadrer le besoin, organiser le travail et suivre un projet | [Gestion de projet](gp.md) |
+| **2** | Structurer, stocker et interroger les données géographiques | [Base de données & PostGIS](cours3.md) |
+| **3** | Vérifier la fiabilité des données et corriger les anomalies | [Contrôle qualité](cq.md) |
+| **4** | Choisir les bons formats et préparer les échanges | [Formats ESRI](fe.md) |
+| **5** | Exploiter les images satellites et les traitements raster | [Télédétection](tel.md) |
+| **6** | Automatiser les traitements et scripts SIG | [Python & PyQGIS](pp.md) |
+| **7** | Décrire, partager et valoriser les données | [Données & interopérabilité](com.md) |
+| **8** | Produire des analyses, cartes et représentations 3D | [Géomatique, SIG & 3D](3d.md) |
 
----
-
-## Mes grandes thématiques
+## Vue d'ensemble des modules
 
 ### Gestion de projet
 
-![Gestion de projet](images/gestion-de-projets.png)
+Méthodes de cadrage, organisation, planification, suivi, gestion des risques, communication et livrables.
 
-Cette partie regroupe les méthodes nécessaires pour conduire un projet géomatique de manière structurée.
-
-On y retrouve notamment :
-
-- le cadrage du besoin ;
-- la rédaction d'une note de cadrage ;
-- l'identification des acteurs ;
-- la planification ;
-- le suivi des tâches ;
-- la gestion des risques ;
-- la communication projet ;
-- la rédaction de livrables.
-
-[Accéder à la partie Gestion de projet](gp.md)
-
----
+[Ouvrir le module Gestion de projet](gp.md)
 
 ### Base de données & PostGIS
 
-![PostgreSQL & PostGIS](images/postgis_postgreSQL.jpg)
+Notions de PostgreSQL, SQL, PostGIS, modélisation, géométries, index spatiaux et administration de bases géographiques.
 
-Cette section est consacrée aux bases de données relationnelles et spatiales.
+![PostGIS](images/postgis.png)
 
-Elle contient des notions sur :
+[Ouvrir le module Base de données & PostGIS](cours3.md)
 
-- PostgreSQL ;
-- PostGIS ;
-- les schémas ;
-- les tables ;
-- les clés primaires et étrangères ;
-- les requêtes SQL ;
-- les géométries ;
-- les index spatiaux ;
-- l'administration d'une base de données géographique.
+### Contrôle qualité
 
-[Accéder à la partie Base de données & PostGIS](bd.md)
+Vérification de la complétude, cohérence, précision et conformité des données géographiques.
 
----
+[Ouvrir le module Contrôle qualité](cq.md)
 
-### Python & PyQGIS
+### Formats ESRI
 
-![Python et PyQGIS](images/pyqgis.png)
+Formats SIG, shapefile, geodatabase, échanges de données, contraintes techniques et bonnes pratiques.
 
-Cette partie présente l'utilisation de Python pour automatiser les traitements géomatiques.
-
-Les objectifs sont :
-
-- comprendre les bases de Python ;
-- manipuler des fichiers ;
-- utiliser des bibliothèques géomatiques ;
-- automatiser des traitements QGIS ;
-- créer des scripts PyQGIS ;
-- gagner du temps dans les tâches répétitives.
-
-[Accéder à la partie Python & PyQGIS](pp.md)
-
----
+[Ouvrir le module Formats ESRI](fe.md)
 
 ### Télédétection
 
-![Télédétection](images/teledetection.png)
+Images satellites, bandes spectrales, compositions colorées, indices, classification et traitements raster.
 
-Cette section regroupe les notions liées aux images satellites et aux traitements raster.
+[Ouvrir le module Télédétection](tel.md)
 
-Elle contient par exemple :
+### Python & PyQGIS
 
-- les images Sentinel ;
-- les bandes spectrales ;
-- les compositions colorées ;
-- le NDVI ;
-- la classification d'images ;
-- les traitements raster ;
-- l'analyse de l'occupation du sol.
+Automatisation des tâches répétitives, scripts Python, traitements QGIS et logique de production.
 
-[Accéder à la partie Télédétection](tel.md)
+[Ouvrir le module Python & PyQGIS](pp.md)
 
----
+### Données & interopérabilité
+
+Cycle de vie des données, métadonnées, VRT, droit informatique, publication et partage.
+
+[Ouvrir le module Données & interopérabilité](com.md)
 
 ### Géomatique, SIG & 3D
 
-![Géomatique et 3D](images/3d.png)
+QGIS, projections, couches vecteur/raster, analyse spatiale, cartographie et représentation 3D.
 
-Cette partie regroupe les notions principales liées aux systèmes d'information géographique.
-
-On y trouve :
-
-- QGIS ;
-- la cartographie ;
-- les projections ;
-- les couches vecteur ;
-- les couches raster ;
-- les traitements spatiaux ;
-- l'analyse territoriale ;
-- la production de cartes ;
-- la représentation 3D.
-
-[Accéder à la partie Géomatique, SIG & 3D](3d.md)
-
----
+[Ouvrir le module Géomatique, SIG & 3D](3d.md)
 
 ## Compétences travaillées
 
@@ -164,27 +105,12 @@ On y trouve :
 |---|---|
 | Gestion de projet géomatique | Intermédiaire à avancé |
 | PostgreSQL / PostGIS | Intermédiaire |
-| QGIS | Avancé |
-| Python | Progressif |
-| PyQGIS | Progressif |
+| QGIS et analyse spatiale | Avancé |
+| Python et PyQGIS | Progressif |
 | Télédétection | Intermédiaire |
 | Contrôle qualité des données | Intermédiaire |
 | Documentation technique | Professionnel |
 
----
-
-## Ressources utiles
-
-| Outil | Utilisation |
-|---|---|
-| **QGIS** | Consultation, analyse spatiale et production cartographique |
-| **PostgreSQL / PostGIS** | Stockage, requêtes spatiales et administration de données |
-| **Python / PyQGIS** | Automatisation et traitements répétitifs |
-| **GitHub Pages** | Publication de la documentation |
-| **Markdown** | Rédaction claire, légère et versionnable |
-
----
-
-## À retenir
-
-Cette page est le point d'entrée de la documentation. Elle évoluera au fur et à mesure de l'ajout des cours, des exercices et des projets réalisés pendant la formation.
+```{note}
+Cette documentation est évolutive. Les pages seront enrichies progressivement avec les notes de cours, les exercices, les commandes, les captures et les travaux pratiques réalisés pendant la formation.
+```

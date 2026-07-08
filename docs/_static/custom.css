@@ -1,41 +1,138 @@
-﻿.wy-side-nav-search {
-    background-color: #589632;
+:root {
+    --cpgeom-green: #2f7d4f;
+    --cpgeom-blue: #245f73;
+    --cpgeom-gold: #d89b2b;
+    --cpgeom-ink: #1f2933;
+    --cpgeom-soft: #f6f9f7;
+    --cpgeom-line: #d9e2ec;
+}
+
+.wy-side-nav-search {
+    background: linear-gradient(135deg, var(--cpgeom-green), var(--cpgeom-blue));
+}
+
+.wy-side-nav-search > a,
+.wy-side-nav-search .version {
+    color: #ffffff;
 }
 
 .wy-nav-side {
-    background: #2b2b2b;
+    background: #1f2933;
 }
 
 .wy-menu-vertical p.caption {
-    color: #9fd36b;
-    font-weight: bold;
+    color: #a7d7b5;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-transform: none;
 }
 
-.wy-menu-vertical a:hover {
-    background-color: #589632;
-    color: white;
+.wy-menu-vertical a {
+    color: #d8e2dc;
+}
+
+.wy-menu-vertical a:hover,
+.wy-menu-vertical li.current a:hover {
+    background: var(--cpgeom-green);
+    color: #ffffff;
+}
+
+.wy-menu-vertical li.current > a,
+.wy-menu-vertical li.on a {
+    border-color: var(--cpgeom-green);
+    color: var(--cpgeom-ink);
+}
+
+.wy-nav-content-wrap {
+    background: #eef4f1;
 }
 
 .wy-nav-content {
-    max-width: 1100px;
+    max-width: 1120px;
+    min-height: 100vh;
+    background: #ffffff;
 }
 
-h1 {
-    color: #3c7d22;
-    border-bottom: 2px solid #e6e6e6;
-    padding-bottom: 10px;
+.rst-content h1 {
+    margin-bottom: 1rem;
+    color: var(--cpgeom-ink);
+    font-size: 2.25rem;
+    font-weight: 800;
+    border-bottom: 4px solid var(--cpgeom-green);
+    padding-bottom: .6rem;
 }
 
-h2 {
-    color: #4f8f2f;
-    margin-top: 35px;
+.rst-content h2 {
+    margin-top: 2.3rem;
+    color: var(--cpgeom-blue);
+    font-weight: 750;
 }
 
-a {
-    color: #3c7d22;
+.rst-content h3 {
+    color: var(--cpgeom-green);
 }
 
-table.docutils th {
-    background-color: #589632;
-    color: white;
+.rst-content p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.rst-content a {
+    color: var(--cpgeom-blue);
+    font-weight: 600;
+}
+
+.rst-content a:hover {
+    color: var(--cpgeom-green);
+}
+
+.rst-content img {
+    display: block;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--cpgeom-line);
+    box-shadow: 0 12px 28px rgba(31, 41, 51, .12);
+}
+
+.rst-content table.docutils {
+    border: 1px solid var(--cpgeom-line);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(31, 41, 51, .06);
+}
+
+.rst-content table.docutils th {
+    background: var(--cpgeom-blue);
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.rst-content table.docutils td {
+    background: #ffffff;
+}
+
+.rst-content table.docutils tr:nth-child(even) td {
+    background: var(--cpgeom-soft);
+}
+
+.rst-content .admonition {
+    border-radius: 8px;
+    border-left: 6px solid var(--cpgeom-gold);
+    background: #fff8e8;
+}
+
+.rst-content .admonition-title {
+    background: var(--cpgeom-gold);
+    color: #ffffff;
+}
+
+.rst-content hr {
+    margin: 2rem 0;
+    border-top: 1px solid var(--cpgeom-line);
+}
+
+.btn,
+.rst-content .btn {
+    border-radius: 6px;
 }

@@ -1,16 +1,36 @@
 # Gestion de projet
 
-Cette partie regroupe mes notes sur la gestion de projet appliquée à la géomatique.
+Cette partie regroupe les méthodes utiles pour conduire un projet géomatique de manière structurée, depuis l'analyse du besoin jusqu'à la livraison.
 
 ## Objectifs
 
-- Comprendre le cadrage d’un projet
-- Identifier les besoins
-- Définir les acteurs
-- Planifier les tâches
-- Suivre l’avancement
-- Produire les livrables
+- Comprendre le besoin et le contexte du projet.
+- Identifier les acteurs, rôles et responsabilités.
+- Définir les objectifs, livrables et contraintes.
+- Planifier les tâches et suivre l'avancement.
+- Anticiper les risques et organiser la communication.
 
-## Notes de cours
+## Notions clés
 
-À compléter avec mes notes.
+| Notion | Utilité |
+|---|---|
+| **Cadrage** | Clarifier le besoin, le périmètre et les objectifs. |
+| **Acteurs** | Identifier les parties prenantes et leurs attentes. |
+| **Planning** | Organiser les étapes, délais et priorités. |
+| **Risques** | Prévoir les blocages possibles et les réponses adaptées. |
+| **Livrables** | Formaliser les résultats attendus du projet. |
+
+## Travaux à documenter
+
+- Note de cadrage.
+- Planning de projet.
+- Liste des acteurs.
+- Tableau de suivi des tâches.
+- Analyse des risques.
+- Bilan ou retour d'expérience.
+
+## Ressources utiles
+
+- QGIS pour la production cartographique.
+- GitHub pour versionner la documentation.
+- Markdown pour rédiger les notes et livrables.
