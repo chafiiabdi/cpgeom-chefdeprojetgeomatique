@@ -1,14 +1,155 @@
-<!DOCTYPE html><html class="writer-html5" lang="fr" data-content_root="./"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Données &amp; interopérabilité — Documentation CPGEOM</title><link rel="stylesheet" type="text/css" href="_static/pygments.css" /><link rel="stylesheet" type="text/css" href="_static/css/theme.css" /><link rel="stylesheet" type="text/css" href="_static/custom.css" /><script src="_static/jquery.js"></script><script src="_static/js/theme.js"></script></head><body class="wy-body-for-nav"><div class="wy-grid-for-nav"><nav data-toggle="wy-nav-shift" class="wy-nav-side"><div class="wy-side-scroll"><div class="wy-side-nav-search"><a href="gp.html" class="icon icon-home">Documentation CPGEOM</a><div role="search"><form id="rtd-search-form" class="wy-form" action="search.html" method="get"><input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" /></form></div></div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu"><p class="caption" role="heading"><span class="caption-text">Modules de formation</span></p><ul class="current"><li class="toctree-l1"><a class="reference internal" href="gp.html">Gestion de projet</a></li><li class="toctree-l1"><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a></li><li class="toctree-l1"><a class="reference internal" href="cq.html">Contrôle qualité</a></li><li class="toctree-l1"><a class="reference internal" href="fe.html">Formats ESRI</a></li><li class="toctree-l1"><a class="reference internal" href="tel.html">Télédétection</a></li><li class="toctree-l1"><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a></li><li class="toctree-l1 current"><a class="reference internal" href="com.html">Données &amp; interopérabilité</a></li><li class="toctree-l1"><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a></li></ul><div class="local-toc"><ul><li><a class="reference internal" href="#">Données &amp; interopérabilité</a><ul><li><a class="reference internal" href="#objectifs">Objectifs</a></li><li><a class="reference internal" href="#notions-cles">Notions clés</a></li><li><a class="reference internal" href="#bonnes-pratiques">Bonnes pratiques</a></li><li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li></ul></li></ul></div></div></div></nav><section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"><i data-toggle="wy-nav-top" class="fa fa-bars"></i><a href="gp.html">Documentation CPGEOM</a></nav><div class="wy-nav-content"><div class="rst-content style-external-links"><div role="navigation" aria-label="Page navigation"><ul class="wy-breadcrumbs"><li><a href="gp.html" class="icon icon-home" aria-label="Home"></a></li><li class="breadcrumb-item active">Données &amp; interopérabilité</li></ul><hr/></div><div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article"><div itemprop="articleBody"><section id="donnees-et-interoperabilite"><h1>Données &amp; interopérabilité<a class="headerlink" href="#donnees-et-interoperabilite" title="Lien vers cette rubrique">¶</a></h1>
-<p>Cette partie regroupe les notions liées au cycle de vie des données, aux métadonnées, aux échanges et aux obligations de documentation.</p>
-<section id="objectifs"><h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
-<ul class="simple"><li><p>Comprendre le cycle de vie d'une donnée.</p></li><li><p>Décrire les sources, traitements et limites.</p></li><li><p>Utiliser les métadonnées pour rendre les données compréhensibles.</p></li><li><p>Préparer des échanges entre outils ou organisations.</p></li><li><p>Identifier les points de vigilance juridiques et techniques.</p></li></ul>
-<section id="notions-cles"><h2>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique">¶</a></h2>
-<table class="docutils align-default"><thead><tr class="row-odd"><th class="head"><p>Notion</p></th><th class="head"><p>Utilité</p></th></tr></thead><tbody><tr class="row-even"><td><p><strong>Cycle de vie</strong></p></td><td><p>Suivre une donnée de sa création à son archivage.</p></td></tr>
-<tr class="row-odd"><td><p><strong>Métadonnée</strong></p></td><td><p>Décrire l'origine, la qualité et l'usage d'une donnée.</p></td></tr>
-<tr class="row-even"><td><p><strong>Interopérabilité</strong></p></td><td><p>Faciliter les échanges entre logiciels et acteurs.</p></td></tr>
-<tr class="row-odd"><td><p><strong>VRT</strong></p></td><td><p>Construire une couche virtuelle ou une mosaïque raster.</p></td></tr>
-<tr class="row-even"><td><p><strong>Droit informatique</strong></p></td><td><p>Encadrer l'usage, le partage et la protection des données.</p></td></tr></tbody></table>
-<section id="bonnes-pratiques"><h2>Bonnes pratiques<a class="headerlink" href="#bonnes-pratiques" title="Lien vers cette rubrique">¶</a></h2>
-<ul class="simple"><li><p>Nommer les fichiers clairement.</p></li><li><p>Documenter les sources.</p></li><li><p>Conserver les étapes de traitement.</p></li><li><p>Vérifier les projections.</p></li><li><p>Choisir des formats ouverts lorsque c'est possible.</p></li><li><p>Préparer des métadonnées exploitables.</p></li></ul>
-<section id="travaux-a-documenter"><h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
-<ul class="simple"><li><p>Fiche de métadonnées.</p></li><li><p>Description d'un jeu de données.</p></li><li><p>Procédure d'échange.</p></li><li><p>Contraintes ou limites d'utilisation.</p></li></ul></div></div><footer><hr/><div role="contentinfo"><p>© Documentation CPGEOM.</p></div></footer></div></div></section></div><script>jQuery(function(){SphinxRtdTheme.Navigation.enable(true);});</script></body></html>
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="./">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Données &amp; interopérabilité — Documentation CPGEOM</title>
+  <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+  <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  <script src="_static/jquery.js"></script>
+  <script src="_static/js/theme.js"></script>
+</head>
+
+<body class="wy-body-for-nav">
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          <a href="gp.html" class="icon icon-home">Documentation CPGEOM</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+              <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+            </form>
+          </div>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+            <p class="caption" role="heading"><span class="caption-text">Modules de formation</span></p>
+            <ul class="current">
+              <li class="toctree-l1"><a class="reference internal" href="gp.html">Gestion de projet</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="cq.html">Contrôle qualité</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="fe.html">Formats ESRI</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="tel.html">Télédétection</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a></li>
+              <li class="toctree-l1 current"><a class="reference internal" href="com.html">Données &amp; interopérabilité</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a></li>
+            </ul>
+            <div class="local-toc">
+              <ul>
+                <li><a class="reference internal" href="#">Données &amp; interopérabilité</a>
+                  <ul>
+                <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
+                <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
+                <li><a class="reference internal" href="#bonnes-pratiques">Bonnes pratiques</a></li>
+                <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="gp.html">Documentation CPGEOM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+            <ul class="wy-breadcrumbs">
+              <li><a href="gp.html" class="icon icon-home" aria-label="Home"></a></li>
+              <li class="breadcrumb-item active">Données &amp; interopérabilité</li>
+            </ul>
+            <hr/>
+          </div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div itemprop="articleBody">
+        <section id="donnees-et-interoperabilite">
+          <h1>Données &amp; interopérabilité<a class="headerlink" href="#donnees-et-interoperabilite" title="Lien vers cette rubrique">¶</a></h1>
+        <p>Cette partie regroupe les notions liées au cycle de vie des données, aux métadonnées, aux échanges et aux obligations de documentation.</p>
+        <section id="objectifs">
+          <h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
+        <ul class="simple">
+          <li><p>Comprendre le cycle de vie d'une donnée.</p></li>
+          <li><p>Décrire les sources, traitements et limites.</p></li>
+          <li><p>Utiliser les métadonnées pour rendre les données compréhensibles.</p></li>
+          <li><p>Préparer des échanges entre outils ou organisations.</p></li>
+          <li><p>Identifier les points de vigilance juridiques et techniques.</p></li>
+        </ul>
+        <section id="notions-cles">
+          <h2>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique">¶</a></h2>
+        <table class="docutils align-default">
+          <thead>
+          <tr class="row-odd">
+            <th class="head"><p>Notion</p></th>
+            <th class="head"><p>Utilité</p></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="row-even">
+            <td><p><strong>Cycle de vie</strong></p></td>
+            <td><p>Suivre une donnée de sa création à son archivage.</p></td>
+          </tr>
+          <tr class="row-odd">
+            <td><p><strong>Métadonnée</strong></p></td>
+            <td><p>Décrire l'origine, la qualité et l'usage d'une donnée.</p></td>
+          </tr>
+          <tr class="row-even">
+            <td><p><strong>Interopérabilité</strong></p></td>
+            <td><p>Faciliter les échanges entre logiciels et acteurs.</p></td>
+          </tr>
+          <tr class="row-odd">
+            <td><p><strong>VRT</strong></p></td>
+            <td><p>Construire une couche virtuelle ou une mosaïque raster.</p></td>
+          </tr>
+          <tr class="row-even">
+            <td><p><strong>Droit informatique</strong></p></td>
+            <td><p>Encadrer l'usage, le partage et la protection des données.</p></td>
+          </tr>
+          </tbody>
+        </table>
+        <section id="bonnes-pratiques">
+          <h2>Bonnes pratiques<a class="headerlink" href="#bonnes-pratiques" title="Lien vers cette rubrique">¶</a></h2>
+        <ul class="simple">
+          <li><p>Nommer les fichiers clairement.</p></li>
+          <li><p>Documenter les sources.</p></li>
+          <li><p>Conserver les étapes de traitement.</p></li>
+          <li><p>Vérifier les projections.</p></li>
+          <li><p>Choisir des formats ouverts lorsque c'est possible.</p></li>
+          <li><p>Préparer des métadonnées exploitables.</p></li>
+        </ul>
+        <section id="travaux-a-documenter">
+          <h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
+        <ul class="simple">
+          <li><p>Fiche de métadonnées.</p></li>
+          <li><p>Description d'un jeu de données.</p></li>
+          <li><p>Procédure d'échange.</p></li>
+          <li><p>Contraintes ou limites d'utilisation.</p></li>
+        </ul>
+            </div>
+          </div>
+
+          <footer>
+            <hr/>
+            <div role="contentinfo">
+              <p>© Documentation CPGEOM.</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    jQuery(function () {
+      SphinxRtdTheme.Navigation.enable(true);
+    });
+  </script>
+</body>
+</html>

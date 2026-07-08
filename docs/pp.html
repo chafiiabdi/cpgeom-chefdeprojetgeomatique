@@ -1,14 +1,157 @@
-<!DOCTYPE html><html class="writer-html5" lang="fr" data-content_root="./"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Python &amp; PyQGIS — Documentation CPGEOM</title><link rel="stylesheet" type="text/css" href="_static/pygments.css" /><link rel="stylesheet" type="text/css" href="_static/css/theme.css" /><link rel="stylesheet" type="text/css" href="_static/custom.css" /><script src="_static/jquery.js"></script><script src="_static/js/theme.js"></script></head><body class="wy-body-for-nav"><div class="wy-grid-for-nav"><nav data-toggle="wy-nav-shift" class="wy-nav-side"><div class="wy-side-scroll"><div class="wy-side-nav-search"><a href="gp.html" class="icon icon-home">Documentation CPGEOM</a><div role="search"><form id="rtd-search-form" class="wy-form" action="search.html" method="get"><input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" /></form></div></div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu"><p class="caption" role="heading"><span class="caption-text">Modules de formation</span></p><ul class="current"><li class="toctree-l1"><a class="reference internal" href="gp.html">Gestion de projet</a></li><li class="toctree-l1"><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a></li><li class="toctree-l1"><a class="reference internal" href="cq.html">Contrôle qualité</a></li><li class="toctree-l1"><a class="reference internal" href="fe.html">Formats ESRI</a></li><li class="toctree-l1"><a class="reference internal" href="tel.html">Télédétection</a></li><li class="toctree-l1 current"><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a></li><li class="toctree-l1"><a class="reference internal" href="com.html">Données &amp; interopérabilité</a></li><li class="toctree-l1"><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a></li></ul><div class="local-toc"><ul><li><a class="reference internal" href="#">Python &amp; PyQGIS</a><ul><li><a class="reference internal" href="#objectifs">Objectifs</a></li><li><a class="reference internal" href="#notions-cles">Notions clés</a></li><li><a class="reference internal" href="#exemples-de-taches-automatisables">Exemples de tâches automatisables</a></li><li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li></ul></li></ul></div></div></div></nav><section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"><i data-toggle="wy-nav-top" class="fa fa-bars"></i><a href="gp.html">Documentation CPGEOM</a></nav><div class="wy-nav-content"><div class="rst-content style-external-links"><div role="navigation" aria-label="Page navigation"><ul class="wy-breadcrumbs"><li><a href="gp.html" class="icon icon-home" aria-label="Home"></a></li><li class="breadcrumb-item active">Python &amp; PyQGIS</li></ul><hr/></div><div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article"><div itemprop="articleBody"><section id="python-et-pyqgis"><h1>Python &amp; PyQGIS<a class="headerlink" href="#python-et-pyqgis" title="Lien vers cette rubrique">¶</a></h1>
-<p>Cette partie présente l'utilisation de Python pour automatiser les traitements géomatiques et gagner du temps dans les tâches répétitives.</p>
-<section id="objectifs"><h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
-<ul class="simple"><li><p>Comprendre les bases de Python.</p></li><li><p>Manipuler des fichiers et dossiers.</p></li><li><p>Utiliser des bibliothèques géomatiques.</p></li><li><p>Automatiser des traitements QGIS.</p></li><li><p>Créer des scripts PyQGIS.</p></li><li><p>Documenter les scripts produits.</p></li></ul>
-<section id="notions-cles"><h2>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique">¶</a></h2>
-<table class="docutils align-default"><thead><tr class="row-odd"><th class="head"><p>Notion</p></th><th class="head"><p>Utilité</p></th></tr></thead><tbody><tr class="row-even"><td><p><strong>Variable</strong></p></td><td><p>Stocker une valeur réutilisable.</p></td></tr>
-<tr class="row-odd"><td><p><strong>Boucle</strong></p></td><td><p>Répéter une action sur plusieurs éléments.</p></td></tr>
-<tr class="row-even"><td><p><strong>Condition</strong></p></td><td><p>Adapter le traitement selon un cas.</p></td></tr>
-<tr class="row-odd"><td><p><strong>Fonction</strong></p></td><td><p>Réutiliser un bloc de code.</p></td></tr>
-<tr class="row-even"><td><p><strong>PyQGIS</strong></p></td><td><p>Piloter QGIS avec Python.</p></td></tr></tbody></table>
-<section id="exemples-de-taches-automatisables"><h2>Exemples de tâches automatisables<a class="headerlink" href="#exemples-de-taches-automatisables" title="Lien vers cette rubrique">¶</a></h2>
-<ul class="simple"><li><p>Renommer ou organiser des fichiers.</p></li><li><p>Charger des couches dans QGIS.</p></li><li><p>Lancer un traitement sur plusieurs couches.</p></li><li><p>Exporter des résultats.</p></li><li><p>Produire des cartes ou rapports.</p></li><li><p>Contrôler des données de manière répétée.</p></li></ul>
-<section id="travaux-a-documenter"><h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
-<ul class="simple"><li><p>Objectif du script.</p></li><li><p>Données d'entrée.</p></li><li><p>Étapes du traitement.</p></li><li><p>Résultat attendu.</p></li><li><p>Limites et améliorations possibles.</p></li></ul></div></div><footer><hr/><div role="contentinfo"><p>© Documentation CPGEOM.</p></div></footer></div></div></section></div><script>jQuery(function(){SphinxRtdTheme.Navigation.enable(true);});</script></body></html>
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="./">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Python &amp; PyQGIS — Documentation CPGEOM</title>
+  <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+  <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+  <script src="_static/jquery.js"></script>
+  <script src="_static/js/theme.js"></script>
+</head>
+
+<body class="wy-body-for-nav">
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          <a href="gp.html" class="icon icon-home">Documentation CPGEOM</a>
+          <div role="search">
+            <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+              <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+            </form>
+          </div>
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+            <p class="caption" role="heading"><span class="caption-text">Modules de formation</span></p>
+            <ul class="current">
+              <li class="toctree-l1"><a class="reference internal" href="gp.html">Gestion de projet</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="cq.html">Contrôle qualité</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="fe.html">Formats ESRI</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="tel.html">Télédétection</a></li>
+              <li class="toctree-l1 current"><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="com.html">Données &amp; interopérabilité</a></li>
+              <li class="toctree-l1"><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a></li>
+            </ul>
+            <div class="local-toc">
+              <ul>
+                <li><a class="reference internal" href="#">Python &amp; PyQGIS</a>
+                  <ul>
+                <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
+                <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
+                <li><a class="reference internal" href="#exemples-de-taches-automatisables">Exemples de tâches automatisables</a></li>
+                <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" aria-label="Mobile navigation menu">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="gp.html">Documentation CPGEOM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+            <ul class="wy-breadcrumbs">
+              <li><a href="gp.html" class="icon icon-home" aria-label="Home"></a></li>
+              <li class="breadcrumb-item active">Python &amp; PyQGIS</li>
+            </ul>
+            <hr/>
+          </div>
+
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div itemprop="articleBody">
+        <section id="python-et-pyqgis">
+          <h1>Python &amp; PyQGIS<a class="headerlink" href="#python-et-pyqgis" title="Lien vers cette rubrique">¶</a></h1>
+        <p>Cette partie présente l'utilisation de Python pour automatiser les traitements géomatiques et gagner du temps dans les tâches répétitives.</p>
+        <section id="objectifs">
+          <h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
+        <ul class="simple">
+          <li><p>Comprendre les bases de Python.</p></li>
+          <li><p>Manipuler des fichiers et dossiers.</p></li>
+          <li><p>Utiliser des bibliothèques géomatiques.</p></li>
+          <li><p>Automatiser des traitements QGIS.</p></li>
+          <li><p>Créer des scripts PyQGIS.</p></li>
+          <li><p>Documenter les scripts produits.</p></li>
+        </ul>
+        <section id="notions-cles">
+          <h2>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique">¶</a></h2>
+        <table class="docutils align-default">
+          <thead>
+          <tr class="row-odd">
+            <th class="head"><p>Notion</p></th>
+            <th class="head"><p>Utilité</p></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr class="row-even">
+            <td><p><strong>Variable</strong></p></td>
+            <td><p>Stocker une valeur réutilisable.</p></td>
+          </tr>
+          <tr class="row-odd">
+            <td><p><strong>Boucle</strong></p></td>
+            <td><p>Répéter une action sur plusieurs éléments.</p></td>
+          </tr>
+          <tr class="row-even">
+            <td><p><strong>Condition</strong></p></td>
+            <td><p>Adapter le traitement selon un cas.</p></td>
+          </tr>
+          <tr class="row-odd">
+            <td><p><strong>Fonction</strong></p></td>
+            <td><p>Réutiliser un bloc de code.</p></td>
+          </tr>
+          <tr class="row-even">
+            <td><p><strong>PyQGIS</strong></p></td>
+            <td><p>Piloter QGIS avec Python.</p></td>
+          </tr>
+          </tbody>
+        </table>
+        <section id="exemples-de-taches-automatisables">
+          <h2>Exemples de tâches automatisables<a class="headerlink" href="#exemples-de-taches-automatisables" title="Lien vers cette rubrique">¶</a></h2>
+        <ul class="simple">
+          <li><p>Renommer ou organiser des fichiers.</p></li>
+          <li><p>Charger des couches dans QGIS.</p></li>
+          <li><p>Lancer un traitement sur plusieurs couches.</p></li>
+          <li><p>Exporter des résultats.</p></li>
+          <li><p>Produire des cartes ou rapports.</p></li>
+          <li><p>Contrôler des données de manière répétée.</p></li>
+        </ul>
+        <section id="travaux-a-documenter">
+          <h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
+        <ul class="simple">
+          <li><p>Objectif du script.</p></li>
+          <li><p>Données d'entrée.</p></li>
+          <li><p>Étapes du traitement.</p></li>
+          <li><p>Résultat attendu.</p></li>
+          <li><p>Limites et améliorations possibles.</p></li>
+        </ul>
+            </div>
+          </div>
+
+          <footer>
+            <hr/>
+            <div role="contentinfo">
+              <p>© Documentation CPGEOM.</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    jQuery(function () {
+      SphinxRtdTheme.Navigation.enable(true);
+    });
+  </script>
+</body>
+</html>

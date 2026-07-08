@@ -2,24 +2,11 @@
 
 Bienvenue dans la documentation de formation **CPGEOM - Chef de projet géomatique**.
 
-Cette page devient la page principale du site. Elle sert à la fois de point d'entrée, de carnet de cours, de support de révision et de base de ressources techniques.
+Cette page est le point d'entrée principal du site. Elle sert de carnet de cours, de support de révision et de base de ressources techniques pour suivre la formation.
 
 Elle regroupe les notions essentielles pour conduire un projet géomatique : cadrage, données spatiales, bases de données, contrôle qualité, automatisation, télédétection et production cartographique.
 
 ![Gestion de projet géomatique](images/gestion-de-projets.jpg)
-
-```{toctree}
-:maxdepth: 2
-:caption: Modules de formation
-
-cours3
-cq
-fe
-tel
-pp
-com
-3d
-```
 
 ## Objectifs du site
 
@@ -139,4 +126,18 @@ Cette partie regroupe les méthodes utiles pour conduire un projet géomatique d
 
 ```{note}
 Cette documentation est évolutive. Les pages seront enrichies progressivement avec les notes de cours, les exercices, les commandes, les captures et les travaux pratiques réalisés pendant la formation.
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Modules de formation
+:hidden:
+
+cours3
+cq
+fe
+tel
+pp
+com
+3d
 ```
