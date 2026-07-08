@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Base de données &amp; PostGIS — Documentation CPGEOM</title>
+  <link rel="shortcut icon" href="_static/cpgeom-logo.svg" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
   <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
   <link rel="stylesheet" type="text/css" href="_static/custom.css" />
@@ -16,7 +17,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
-          <a href="gp.html" class="icon icon-home">Documentation CPGEOM</a>
+          <a href="gp.html" class="icon icon-home">
+            Documentation CPGEOM
+            <img src="_static/cpgeom-logo.svg" class="logo" alt="Logo CPGEOM" />
+          </a>
+          <div class="version">CPGEOM</div>
           <div role="search">
             <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
               <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
@@ -39,12 +44,12 @@
             <div class="local-toc">
               <ul>
                 <li><a class="reference internal" href="#">Base de données &amp; PostGIS</a>
-                  <ul>
-                <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
-                <li><a class="reference internal" href="#requetes-a-maitriser">Requêtes à maîtriser</a></li>
-                <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                  </ul>
+                <ul>
+                  <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
+                  <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
+                  <li><a class="reference internal" href="#requetes-a-maitriser">Requêtes à maîtriser</a></li>
+                  <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
+                </ul>
                 </li>
               </ul>
             </div>
@@ -70,69 +75,69 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div itemprop="articleBody">
-        <section id="base-de-donnees-et-postgis">
-          <h1>Base de données &amp; PostGIS<a class="headerlink" href="#base-de-donnees-et-postgis" title="Lien vers cette rubrique">¶</a></h1>
-        <p>Cette partie rassemble les notions liées à PostgreSQL, PostGIS et à l'administration des bases de données spatiales.</p>
-        <section id="objectifs">
-          <h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
-        <ul class="simple">
-          <li><p>Comprendre le fonctionnement d'une base relationnelle.</p></li>
-          <li><p>Créer et organiser des tables.</p></li>
-          <li><p>Écrire des requêtes SQL.</p></li>
-          <li><p>Manipuler des géométries avec PostGIS.</p></li>
-          <li><p>Créer des index spatiaux.</p></li>
-          <li><p>Administrer une base de données géographique.</p></li>
-        </ul>
-        <section id="notions-cles">
-          <h2>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique">¶</a></h2>
-        <table class="docutils align-default">
-          <thead>
-          <tr class="row-odd">
-            <th class="head"><p>Notion</p></th>
-            <th class="head"><p>Utilité</p></th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr class="row-even">
-            <td><p><strong>Table</strong></p></td>
-            <td><p>Stocker les données sous forme de lignes et colonnes.</p></td>
-          </tr>
-          <tr class="row-odd">
-            <td><p><strong>Clé primaire</strong></p></td>
-            <td><p>Identifier chaque enregistrement de façon unique.</p></td>
-          </tr>
-          <tr class="row-even">
-            <td><p><strong>Clé étrangère</strong></p></td>
-            <td><p>Relier plusieurs tables entre elles.</p></td>
-          </tr>
-          <tr class="row-odd">
-            <td><p><strong>Géométrie</strong></p></td>
-            <td><p>Représenter des points, lignes ou polygones.</p></td>
-          </tr>
-          <tr class="row-even">
-            <td><p><strong>Index spatial</strong></p></td>
-            <td><p>Accélérer les requêtes géographiques.</p></td>
-          </tr>
-          </tbody>
-        </table>
-        <section id="requetes-a-maitriser">
-          <h2>Requêtes à maîtriser<a class="headerlink" href="#requetes-a-maitriser" title="Lien vers cette rubrique">¶</a></h2>
-        <ul class="simple">
-          <li><p><code>SELECT</code> pour consulter des données.</p></li>
-          <li><p><code>WHERE</code> pour filtrer les résultats.</p></li>
-          <li><p><code>JOIN</code> pour croiser plusieurs tables.</p></li>
-          <li><p><code>GROUP BY</code> pour agréger des valeurs.</p></li>
-          <li><p>Fonctions PostGIS pour analyser les géométries.</p></li>
-        </ul>
-        <section id="travaux-a-documenter">
-          <h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
-        <ul class="simple">
-          <li><p>Création d'une base PostgreSQL.</p></li>
-          <li><p>Import de données spatiales.</p></li>
-          <li><p>Requêtes SQL et PostGIS.</p></li>
-          <li><p>Contrôle de géométries.</p></li>
-          <li><p>Optimisation avec index spatial.</p></li>
-        </ul>
+          <section id="base-de-donnees-et-postgis">
+            <h1>Base de données &amp; PostGIS<a class="headerlink" href="#base-de-donnees-et-postgis" title="Lien vers cette rubrique">¶</a></h1>
+          <p>Cette partie rassemble les notions liées à PostgreSQL, PostGIS et à l'administration des bases de données spatiales.</p>
+          <section id="objectifs">
+            <h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
+          <ul class="simple">
+            <li><p>Comprendre le fonctionnement d'une base relationnelle.</p></li>
+            <li><p>Créer et organiser des tables.</p></li>
+            <li><p>Écrire des requêtes SQL.</p></li>
+            <li><p>Manipuler des géométries avec PostGIS.</p></li>
+            <li><p>Créer des index spatiaux.</p></li>
+            <li><p>Administrer une base de données géographique.</p></li>
+          </ul>
+          <section id="notions-cles">
+            <h2>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique">¶</a></h2>
+          <table class="docutils align-default">
+            <thead>
+            <tr class="row-odd">
+              <th class="head"><p>Notion</p></th>
+              <th class="head"><p>Utilité</p></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="row-even">
+              <td><p><strong>Table</strong></p></td>
+              <td><p>Stocker les données sous forme de lignes et colonnes.</p></td>
+            </tr>
+            <tr class="row-odd">
+              <td><p><strong>Clé primaire</strong></p></td>
+              <td><p>Identifier chaque enregistrement de façon unique.</p></td>
+            </tr>
+            <tr class="row-even">
+              <td><p><strong>Clé étrangère</strong></p></td>
+              <td><p>Relier plusieurs tables entre elles.</p></td>
+            </tr>
+            <tr class="row-odd">
+              <td><p><strong>Géométrie</strong></p></td>
+              <td><p>Représenter des points, lignes ou polygones.</p></td>
+            </tr>
+            <tr class="row-even">
+              <td><p><strong>Index spatial</strong></p></td>
+              <td><p>Accélérer les requêtes géographiques.</p></td>
+            </tr>
+            </tbody>
+          </table>
+          <section id="requetes-a-maitriser">
+            <h2>Requêtes à maîtriser<a class="headerlink" href="#requetes-a-maitriser" title="Lien vers cette rubrique">¶</a></h2>
+          <ul class="simple">
+            <li><p><code>SELECT</code> pour consulter des données.</p></li>
+            <li><p><code>WHERE</code> pour filtrer les résultats.</p></li>
+            <li><p><code>JOIN</code> pour croiser plusieurs tables.</p></li>
+            <li><p><code>GROUP BY</code> pour agréger des valeurs.</p></li>
+            <li><p>Fonctions PostGIS pour analyser les géométries.</p></li>
+          </ul>
+          <section id="travaux-a-documenter">
+            <h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
+          <ul class="simple">
+            <li><p>Création d'une base PostgreSQL.</p></li>
+            <li><p>Import de données spatiales.</p></li>
+            <li><p>Requêtes SQL et PostGIS.</p></li>
+            <li><p>Contrôle de géométries.</p></li>
+            <li><p>Optimisation avec index spatial.</p></li>
+          </ul>
             </div>
           </div>
 

@@ -1,5 +1,7 @@
 project = "Documentation CPGEOM"
 author = "Chafii Abdi Ahmed"
+version = "CPGEOM"
+release = "Formation chef de projet géomatique"
 
 extensions = [
     "myst_parser",
@@ -19,6 +21,8 @@ templates_path = ["_templates"]
 html_theme = "sphinx_rtd_theme"
 html_title = "Documentation CPGEOM"
 html_short_title = "CPGEOM"
+html_logo = "_static/cpgeom-logo.svg"
+html_favicon = "_static/cpgeom-logo.svg"
 
 html_theme_options = {
     "collapse_navigation": False,
@@ -26,6 +30,7 @@ html_theme_options = {
     "navigation_depth": 4,
     "prev_next_buttons_location": "both",
     "style_external_links": True,
+    "logo_only": False,
 }
 
 html_static_path = ["_static"]

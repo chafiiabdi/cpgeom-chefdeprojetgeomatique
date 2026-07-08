@@ -1,12 +1,62 @@
 # Gestion de projet
 
-Bienvenue dans la documentation de formation **CPGEOM - Chef de projet géomatique**.
+Bienvenue dans la documentation **CPGEOM - Chef de projet géomatique**.
 
-Cette page est le point d'entrée principal du site. Elle sert de carnet de cours, de support de révision et de base de ressources techniques pour suivre la formation.
+Cette page est le point d'entrée principal du site. Elle est organisée comme une page de documentation technique : navigation claire, sections courtes, tableaux de repères, conventions de lecture et blocs d'information.
 
-Elle regroupe les notions essentielles pour conduire un projet géomatique : cadrage, données spatiales, bases de données, contrôle qualité, automatisation, télédétection et production cartographique.
+```{note}
+Utilise cette page comme sommaire de travail : elle te permet de retrouver rapidement les modules, les objectifs et les notions importantes de la formation.
+```
 
 ![Gestion de projet géomatique](images/gestion-de-projets.jpg)
+
+## Organisation de la documentation
+
+La documentation est structurée autour d'un parcours progressif. Chaque module correspond à une compétence utile dans un projet géomatique.
+
+| Partie | Rôle dans la documentation |
+|---|---|
+| **Navigation latérale** | Accéder rapidement aux modules, comme dans la documentation QGIS. |
+| **Sections principales** | Comprendre les objectifs, le parcours et les compétences. |
+| **Tableaux de repères** | Comparer rapidement les notions, outils et livrables. |
+| **Blocs d'information** | Mettre en avant les conseils, points d'attention et méthodes. |
+| **Pages de modules** | Détailler les cours, exercices et travaux pratiques. |
+
+## Conventions de lecture
+
+Cette documentation utilise quelques conventions simples pour faciliter la lecture.
+
+### Blocs d'information
+
+```{note}
+Une note apporte un complément utile ou une précision de contexte.
+```
+
+```{tip}
+Une astuce indique une bonne pratique à appliquer pendant les exercices ou les projets.
+```
+
+```{important}
+Un point important signale une notion à retenir ou une vigilance à conserver.
+```
+
+### Liens et navigation
+
+| Élément | Signification |
+|---|---|
+| **Lien interne** | Ouvre une autre page de la documentation CPGEOM. |
+| **Titre de section** | Sert de repère dans le menu local de la page. |
+| **Tableau** | Résume une méthode, une comparaison ou une progression. |
+| **Image** | Illustre un thème, un outil ou une logique de travail. |
+
+### Noms et commandes
+
+| Convention | Exemple |
+|---|---|
+| **Outil ou logiciel** | QGIS, PostgreSQL, PostGIS |
+| **Format ou fichier** | Shapefile, GeoPackage, CSV |
+| **Commande ou code** | `SELECT`, `JOIN`, `python script.py` |
+| **Livrable** | note de cadrage, carte, rapport, fiche qualité |
 
 ## Objectifs du site
 
@@ -20,6 +70,10 @@ Elle regroupe les notions essentielles pour conduire un projet géomatique : cad
 
 ## Parcours conseillé
 
+```{tip}
+Commence par la gestion de projet, puis avance vers les données, la qualité, l'automatisation et la valorisation cartographique.
+```
+
 | Étape | Intention | Module |
 |---|---|---|
 | **1** | Cadrer le besoin, organiser le travail et suivre un projet | [Gestion de projet](gp.md) |
@@ -31,7 +85,7 @@ Elle regroupe les notions essentielles pour conduire un projet géomatique : cad
 | **7** | Décrire, partager et valoriser les données | [Données & interopérabilité](com.md) |
 | **8** | Produire des analyses, cartes et représentations 3D | [Géomatique, SIG & 3D](3d.md) |
 
-## Vue d'ensemble des modules
+## Modules de formation
 
 ### Gestion de projet
 
@@ -124,8 +178,8 @@ Cette partie regroupe les méthodes utiles pour conduire un projet géomatique d
 | Contrôle qualité des données | Intermédiaire |
 | Documentation technique | Professionnel |
 
-```{note}
-Cette documentation est évolutive. Les pages seront enrichies progressivement avec les notes de cours, les exercices, les commandes, les captures et les travaux pratiques réalisés pendant la formation.
+```{important}
+La documentation est évolutive : chaque page pourra être enrichie avec les notes de cours, les exercices, les commandes, les captures et les travaux pratiques réalisés pendant la formation.
 ```
 
 ```{toctree}

@@ -4,6 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contrôle qualité — Documentation CPGEOM</title>
+  <link rel="shortcut icon" href="_static/cpgeom-logo.svg" />
   <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
   <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
   <link rel="stylesheet" type="text/css" href="_static/custom.css" />
@@ -16,7 +17,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search">
-          <a href="gp.html" class="icon icon-home">Documentation CPGEOM</a>
+          <a href="gp.html" class="icon icon-home">
+            Documentation CPGEOM
+            <img src="_static/cpgeom-logo.svg" class="logo" alt="Logo CPGEOM" />
+          </a>
+          <div class="version">CPGEOM</div>
           <div role="search">
             <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
               <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
@@ -39,12 +44,12 @@
             <div class="local-toc">
               <ul>
                 <li><a class="reference internal" href="#">Contrôle qualité</a>
-                  <ul>
-                <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                <li><a class="reference internal" href="#criteres-de-controle">Critères de contrôle</a></li>
-                <li><a class="reference internal" href="#methodes-possibles">Méthodes possibles</a></li>
-                <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                  </ul>
+                <ul>
+                  <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
+                  <li><a class="reference internal" href="#criteres-de-controle">Critères de contrôle</a></li>
+                  <li><a class="reference internal" href="#methodes-possibles">Méthodes possibles</a></li>
+                  <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
+                </ul>
                 </li>
               </ul>
             </div>
@@ -70,68 +75,68 @@
 
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div itemprop="articleBody">
-        <section id="controle-qualite">
-          <h1>Contrôle qualité<a class="headerlink" href="#controle-qualite" title="Lien vers cette rubrique">¶</a></h1>
-        <p>Cette partie regroupe les méthodes de contrôle qualité appliquées aux données géographiques.</p>
-        <section id="objectifs">
-          <h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
-        <ul class="simple">
-          <li><p>Vérifier la complétude des données.</p></li>
-          <li><p>Contrôler la cohérence attributaire et géométrique.</p></li>
-          <li><p>Identifier les erreurs et anomalies.</p></li>
-          <li><p>Corriger ou documenter les problèmes détectés.</p></li>
-          <li><p>Produire une synthèse de qualité exploitable.</p></li>
-        </ul>
-        <section id="criteres-de-controle">
-          <h2>Critères de contrôle<a class="headerlink" href="#criteres-de-controle" title="Lien vers cette rubrique">¶</a></h2>
-        <table class="docutils align-default">
-          <thead>
-          <tr class="row-odd">
-            <th class="head"><p>Critère</p></th>
-            <th class="head"><p>Question à se poser</p></th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr class="row-even">
-            <td><p><strong>Complétude</strong></p></td>
-            <td><p>Toutes les données attendues sont-elles présentes ?</p></td>
-          </tr>
-          <tr class="row-odd">
-            <td><p><strong>Cohérence</strong></p></td>
-            <td><p>Les valeurs sont-elles logiques entre elles ?</p></td>
-          </tr>
-          <tr class="row-even">
-            <td><p><strong>Précision</strong></p></td>
-            <td><p>Les positions et attributs sont-ils suffisamment fiables ?</p></td>
-          </tr>
-          <tr class="row-odd">
-            <td><p><strong>Conformité</strong></p></td>
-            <td><p>Les données respectent-elles le cahier des charges ?</p></td>
-          </tr>
-          <tr class="row-even">
-            <td><p><strong>Traçabilité</strong></p></td>
-            <td><p>Les sources, traitements et limites sont-ils documentés ?</p></td>
-          </tr>
-          </tbody>
-        </table>
-        <section id="methodes-possibles">
-          <h2>Méthodes possibles<a class="headerlink" href="#methodes-possibles" title="Lien vers cette rubrique">¶</a></h2>
-        <ul class="simple">
-          <li><p>Contrôle visuel dans QGIS.</p></li>
-          <li><p>Vérification des champs attributaires.</p></li>
-          <li><p>Détection des doublons.</p></li>
-          <li><p>Contrôle des géométries invalides.</p></li>
-          <li><p>Comparaison avec une donnée de référence.</p></li>
-          <li><p>Synthèse des anomalies dans un tableau.</p></li>
-        </ul>
-        <section id="travaux-a-documenter">
-          <h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
-        <ul class="simple">
-          <li><p>Grille de contrôle qualité.</p></li>
-          <li><p>Liste des erreurs détectées.</p></li>
-          <li><p>Méthode de correction.</p></li>
-          <li><p>Rapport ou fiche de synthèse.</p></li>
-        </ul>
+          <section id="controle-qualite">
+            <h1>Contrôle qualité<a class="headerlink" href="#controle-qualite" title="Lien vers cette rubrique">¶</a></h1>
+          <p>Cette partie regroupe les méthodes de contrôle qualité appliquées aux données géographiques.</p>
+          <section id="objectifs">
+            <h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
+          <ul class="simple">
+            <li><p>Vérifier la complétude des données.</p></li>
+            <li><p>Contrôler la cohérence attributaire et géométrique.</p></li>
+            <li><p>Identifier les erreurs et anomalies.</p></li>
+            <li><p>Corriger ou documenter les problèmes détectés.</p></li>
+            <li><p>Produire une synthèse de qualité exploitable.</p></li>
+          </ul>
+          <section id="criteres-de-controle">
+            <h2>Critères de contrôle<a class="headerlink" href="#criteres-de-controle" title="Lien vers cette rubrique">¶</a></h2>
+          <table class="docutils align-default">
+            <thead>
+            <tr class="row-odd">
+              <th class="head"><p>Critère</p></th>
+              <th class="head"><p>Question à se poser</p></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="row-even">
+              <td><p><strong>Complétude</strong></p></td>
+              <td><p>Toutes les données attendues sont-elles présentes ?</p></td>
+            </tr>
+            <tr class="row-odd">
+              <td><p><strong>Cohérence</strong></p></td>
+              <td><p>Les valeurs sont-elles logiques entre elles ?</p></td>
+            </tr>
+            <tr class="row-even">
+              <td><p><strong>Précision</strong></p></td>
+              <td><p>Les positions et attributs sont-ils suffisamment fiables ?</p></td>
+            </tr>
+            <tr class="row-odd">
+              <td><p><strong>Conformité</strong></p></td>
+              <td><p>Les données respectent-elles le cahier des charges ?</p></td>
+            </tr>
+            <tr class="row-even">
+              <td><p><strong>Traçabilité</strong></p></td>
+              <td><p>Les sources, traitements et limites sont-ils documentés ?</p></td>
+            </tr>
+            </tbody>
+          </table>
+          <section id="methodes-possibles">
+            <h2>Méthodes possibles<a class="headerlink" href="#methodes-possibles" title="Lien vers cette rubrique">¶</a></h2>
+          <ul class="simple">
+            <li><p>Contrôle visuel dans QGIS.</p></li>
+            <li><p>Vérification des champs attributaires.</p></li>
+            <li><p>Détection des doublons.</p></li>
+            <li><p>Contrôle des géométries invalides.</p></li>
+            <li><p>Comparaison avec une donnée de référence.</p></li>
+            <li><p>Synthèse des anomalies dans un tableau.</p></li>
+          </ul>
+          <section id="travaux-a-documenter">
+            <h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
+          <ul class="simple">
+            <li><p>Grille de contrôle qualité.</p></li>
+            <li><p>Liste des erreurs détectées.</p></li>
+            <li><p>Méthode de correction.</p></li>
+            <li><p>Rapport ou fiche de synthèse.</p></li>
+          </ul>
             </div>
           </div>
 
