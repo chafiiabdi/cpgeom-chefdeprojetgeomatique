@@ -1,226 +1,66 @@
-
-
-<!DOCTYPE html>
-<html class="writer-html5" lang="fr" data-content_root="./">
-<head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gestion de projet &mdash; Documentation CPGEOM</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
-      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=07a025ca" />
-
-  
-      <script src="_static/jquery.js?v=5d32c60e"></script>
-      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script src="_static/documentation_options.js?v=d1a510d7"></script>
-      <script src="_static/doctools.js?v=fd6eb6e6"></script>
-      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
-      <script src="_static/translations.js?v=e6b791cb"></script>
-    <script src="_static/js/theme.js"></script>
-    <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Recherche" href="search.html" />
-    <link rel="next" title="Base de données &amp; PostGIS" href="cours3.html" />
-    <link rel="prev" title="Documentation CPGEOM" href="index.html" /> 
-</head>
-
-<body class="wy-body-for-nav"> 
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
-      <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
-
-          
-          
-          <a href="index.html" class="icon icon-home">
-            Documentation CPGEOM
-          </a>
-<div role="search">
-  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
-    <input type="hidden" name="check_keywords" value="yes" />
-    <input type="hidden" name="area" value="default" />
-  </form>
-</div>
-        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Modules de formation</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Gestion de projet</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#notions-cles">Notions clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ressources-utiles">Ressources utiles</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cours3.html#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cours3.html#notions-cles">Notions clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cours3.html#requetes-a-maitriser">Requêtes à maîtriser</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cours3.html#travaux-a-documenter">Travaux à documenter</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="cq.html">Contrôle qualité</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="cq.html#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cq.html#criteres-de-controle">Critères de contrôle</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cq.html#methodes-possibles">Méthodes possibles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="cq.html#travaux-a-documenter">Travaux à documenter</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="fe.html">Formats ESRI</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="fe.html#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fe.html#formats-a-connaitre">Formats à connaître</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fe.html#points-de-vigilance">Points de vigilance</a></li>
-<li class="toctree-l2"><a class="reference internal" href="fe.html#travaux-a-documenter">Travaux à documenter</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="tel.html">Télédétection</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="tel.html#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tel.html#notions-cles">Notions clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tel.html#traitements-courants">Traitements courants</a></li>
-<li class="toctree-l2"><a class="reference internal" href="tel.html#travaux-a-documenter">Travaux à documenter</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pp.html#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pp.html#notions-cles">Notions clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pp.html#exemples-de-taches-automatisables">Exemples de tâches automatisables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pp.html#travaux-a-documenter">Travaux à documenter</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="com.html">Données &amp; interopérabilité</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="com.html#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="com.html#notions-cles">Notions clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="com.html#bonnes-pratiques">Bonnes pratiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="com.html#travaux-a-documenter">Travaux à documenter</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="3d.html#objectifs">Objectifs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3d.html#notions-cles">Notions clés</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3d.html#travaux-possibles">Travaux possibles</a></li>
-<li class="toctree-l2"><a class="reference internal" href="3d.html#travaux-a-documenter">Travaux à documenter</a></li>
-</ul>
-</li>
-</ul>
-
-        </div>
-      </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">Documentation CPGEOM</a>
-      </nav>
-
-      <div class="wy-nav-content">
-        <div class="rst-content style-external-links">
-          <div role="navigation" aria-label="Page navigation">
-  <ul class="wy-breadcrumbs">
-      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Gestion de projet</li>
-      <li class="wy-breadcrumbs-aside">
-            <a href="_sources/gp.md.txt" rel="nofollow"> Afficher la source de la page</a>
-      </li>
-  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
-        <a href="index.html" class="btn btn-neutral float-left" title="Documentation CPGEOM" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
-        <a href="cours3.html" class="btn btn-neutral float-right" title="Base de données &amp; PostGIS" accesskey="n">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-  </div>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-           <div itemprop="articleBody">
-             
-  <section id="gestion-de-projet">
-<h1>Gestion de projet<a class="headerlink" href="#gestion-de-projet" title="Lien vers cette rubrique"></a></h1>
-<p>Cette partie regroupe les méthodes utiles pour conduire un projet géomatique de manière structurée, depuis l’analyse du besoin jusqu’à la livraison.</p>
-<section id="objectifs">
-<h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique"></a></h2>
-<ul class="simple">
-<li><p>Comprendre le besoin et le contexte du projet.</p></li>
-<li><p>Identifier les acteurs, rôles et responsabilités.</p></li>
-<li><p>Définir les objectifs, livrables et contraintes.</p></li>
-<li><p>Planifier les tâches et suivre l’avancement.</p></li>
-<li><p>Anticiper les risques et organiser la communication.</p></li>
-</ul>
-</section>
-<section id="notions-cles">
-<h2>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique"></a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head"><p>Notion</p></th>
-<th class="head"><p>Utilité</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><strong>Cadrage</strong></p></td>
-<td><p>Clarifier le besoin, le périmètre et les objectifs.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Acteurs</strong></p></td>
-<td><p>Identifier les parties prenantes et leurs attentes.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Planning</strong></p></td>
-<td><p>Organiser les étapes, délais et priorités.</p></td>
-</tr>
-<tr class="row-odd"><td><p><strong>Risques</strong></p></td>
-<td><p>Prévoir les blocages possibles et les réponses adaptées.</p></td>
-</tr>
-<tr class="row-even"><td><p><strong>Livrables</strong></p></td>
-<td><p>Formaliser les résultats attendus du projet.</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="travaux-a-documenter">
-<h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique"></a></h2>
-<ul class="simple">
-<li><p>Note de cadrage.</p></li>
-<li><p>Planning de projet.</p></li>
-<li><p>Liste des acteurs.</p></li>
-<li><p>Tableau de suivi des tâches.</p></li>
-<li><p>Analyse des risques.</p></li>
-<li><p>Bilan ou retour d’expérience.</p></li>
-</ul>
-</section>
-<section id="ressources-utiles">
-<h2>Ressources utiles<a class="headerlink" href="#ressources-utiles" title="Lien vers cette rubrique"></a></h2>
-<ul class="simple">
-<li><p>QGIS pour la production cartographique.</p></li>
-<li><p>GitHub pour versionner la documentation.</p></li>
-<li><p>Markdown pour rédiger les notes et livrables.</p></li>
-</ul>
-</section>
-</section>
-
-
-           </div>
-          </div>
-          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
-        <a href="index.html" class="btn btn-neutral float-left" title="Documentation CPGEOM" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
-        <a href="cours3.html" class="btn btn-neutral float-right" title="Base de données &amp; PostGIS" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <p>&#169; Droits d'auteur .</p>
-  </div>
-
-  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
-    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
-   
-
-</footer>
-        </div>
-      </div>
-    </section>
-  </div>
-  <script>
-      jQuery(function () {
-          SphinxRtdTheme.Navigation.enable(true);
-      });
-  </script> 
-
-</body>
-</html>
+<!DOCTYPE html><html class="writer-html5" lang="fr" data-content_root="./"><head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Gestion de projet — Documentation CPGEOM</title><link rel="stylesheet" type="text/css" href="_static/pygments.css" /><link rel="stylesheet" type="text/css" href="_static/css/theme.css" /><link rel="stylesheet" type="text/css" href="_static/custom.css" /><script src="_static/jquery.js"></script><script src="_static/js/theme.js"></script></head><body class="wy-body-for-nav"><div class="wy-grid-for-nav"><nav data-toggle="wy-nav-shift" class="wy-nav-side"><div class="wy-side-scroll"><div class="wy-side-nav-search"><a href="gp.html" class="icon icon-home">Documentation CPGEOM</a><div role="search"><form id="rtd-search-form" class="wy-form" action="search.html" method="get"><input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" /></form></div></div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu"><p class="caption" role="heading"><span class="caption-text">Modules de formation</span></p><ul class="current"><li class="toctree-l1 current"><a class="reference internal" href="gp.html">Gestion de projet</a></li><li class="toctree-l1"><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a></li><li class="toctree-l1"><a class="reference internal" href="cq.html">Contrôle qualité</a></li><li class="toctree-l1"><a class="reference internal" href="fe.html">Formats ESRI</a></li><li class="toctree-l1"><a class="reference internal" href="tel.html">Télédétection</a></li><li class="toctree-l1"><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a></li><li class="toctree-l1"><a class="reference internal" href="com.html">Données &amp; interopérabilité</a></li><li class="toctree-l1"><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a></li></ul><div class="local-toc"><ul><li><a class="reference internal" href="#">Gestion de projet</a><ul><li><a class="reference internal" href="#objectifs-du-site">Objectifs du site</a></li><li><a class="reference internal" href="#parcours-conseille">Parcours conseillé</a></li><li><a class="reference internal" href="#vue-d-ensemble-des-modules">Vue d'ensemble des modules</a></li><li><a class="reference internal" href="#focus-gestion-de-projet">Focus gestion de projet</a></li><li><a class="reference internal" href="#competences-travaillees">Compétences travaillées</a></li></ul></li></ul></div></div></div></nav><section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"><i data-toggle="wy-nav-top" class="fa fa-bars"></i><a href="gp.html">Documentation CPGEOM</a></nav><div class="wy-nav-content"><div class="rst-content style-external-links"><div role="navigation" aria-label="Page navigation"><ul class="wy-breadcrumbs"><li><a href="gp.html" class="icon icon-home" aria-label="Home"></a></li><li class="breadcrumb-item active">Gestion de projet</li></ul><hr/></div><div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article"><div itemprop="articleBody"><section id="gestion-de-projet"><h1>Gestion de projet<a class="headerlink" href="#gestion-de-projet" title="Lien vers cette rubrique">¶</a></h1>
+<p>Bienvenue dans la documentation de formation <strong>CPGEOM - Chef de projet géomatique</strong>.</p>
+<p>Cette page devient la page principale du site. Elle sert à la fois de point d'entrée, de carnet de cours, de support de révision et de base de ressources techniques.</p>
+<p>Elle regroupe les notions essentielles pour conduire un projet géomatique : cadrage, données spatiales, bases de données, contrôle qualité, automatisation, télédétection et production cartographique.</p>
+<p><img alt="Gestion de projet géomatique" src="images/gestion-de-projets.jpg" /></p>
+<section id="objectifs-du-site"><h2>Objectifs du site<a class="headerlink" href="#objectifs-du-site" title="Lien vers cette rubrique">¶</a></h2>
+<table class="docutils align-default"><thead><tr class="row-odd"><th class="head"><p>Objectif</p></th><th class="head"><p>Ce que cela permet</p></th></tr></thead><tbody><tr class="row-even"><td><p><strong>Centraliser les cours</strong></p></td><td><p>Retrouver rapidement les notions importantes de la formation.</p></td></tr>
+<tr class="row-odd"><td><p><strong>Structurer les apprentissages</strong></p></td><td><p>Classer les contenus par thème et par usage professionnel.</p></td></tr>
+<tr class="row-even"><td><p><strong>Préparer les révisions</strong></p></td><td><p>Identifier les compétences, méthodes et outils à maîtriser.</p></td></tr>
+<tr class="row-odd"><td><p><strong>Documenter les travaux pratiques</strong></p></td><td><p>Garder une trace claire des exercices, scripts et manipulations.</p></td></tr>
+<tr class="row-even"><td><p><strong>Construire un support professionnel</strong></p></td><td><p>Réutiliser les fiches, procédures et ressources dans de futurs projets.</p></td></tr></tbody></table>
+<section id="parcours-conseille"><h2>Parcours conseillé<a class="headerlink" href="#parcours-conseille" title="Lien vers cette rubrique">¶</a></h2>
+<table class="docutils align-default"><thead><tr class="row-odd"><th class="head"><p>Étape</p></th><th class="head"><p>Intention</p></th><th class="head"><p>Module</p></th></tr></thead><tbody><tr class="row-even"><td><p><strong>1</strong></p></td><td><p>Cadrer le besoin, organiser le travail et suivre un projet</p></td><td><p><a class="reference internal" href="gp.html">Gestion de projet</a></p></td></tr>
+<tr class="row-odd"><td><p><strong>2</strong></p></td><td><p>Structurer, stocker et interroger les données géographiques</p></td><td><p><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a></p></td></tr>
+<tr class="row-even"><td><p><strong>3</strong></p></td><td><p>Vérifier la fiabilité des données et corriger les anomalies</p></td><td><p><a class="reference internal" href="cq.html">Contrôle qualité</a></p></td></tr>
+<tr class="row-odd"><td><p><strong>4</strong></p></td><td><p>Choisir les bons formats et préparer les échanges</p></td><td><p><a class="reference internal" href="fe.html">Formats ESRI</a></p></td></tr>
+<tr class="row-even"><td><p><strong>5</strong></p></td><td><p>Exploiter les images satellites et les traitements raster</p></td><td><p><a class="reference internal" href="tel.html">Télédétection</a></p></td></tr>
+<tr class="row-odd"><td><p><strong>6</strong></p></td><td><p>Automatiser les traitements et scripts SIG</p></td><td><p><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a></p></td></tr>
+<tr class="row-even"><td><p><strong>7</strong></p></td><td><p>Décrire, partager et valoriser les données</p></td><td><p><a class="reference internal" href="com.html">Données &amp; interopérabilité</a></p></td></tr>
+<tr class="row-odd"><td><p><strong>8</strong></p></td><td><p>Produire des analyses, cartes et représentations 3D</p></td><td><p><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a></p></td></tr></tbody></table>
+<section id="vue-d-ensemble-des-modules"><h2>Vue d'ensemble des modules<a class="headerlink" href="#vue-d-ensemble-des-modules" title="Lien vers cette rubrique">¶</a></h2>
+<section id="gestion-de-projet"><h3>Gestion de projet<a class="headerlink" href="#gestion-de-projet" title="Lien vers cette rubrique">¶</a></h3>
+<p>Méthodes de cadrage, organisation, planification, suivi, gestion des risques, communication et livrables.</p>
+<section id="base-de-donnees-et-postgis"><h3>Base de données &amp; PostGIS<a class="headerlink" href="#base-de-donnees-et-postgis" title="Lien vers cette rubrique">¶</a></h3>
+<p>Notions de PostgreSQL, SQL, PostGIS, modélisation, géométries, index spatiaux et administration de bases géographiques.</p>
+<p><img alt="PostGIS" src="images/postgis.png" /></p>
+<p><a class="reference internal" href="cours3.html">Ouvrir le module Base de données &amp; PostGIS</a></p>
+<section id="controle-qualite"><h3>Contrôle qualité<a class="headerlink" href="#controle-qualite" title="Lien vers cette rubrique">¶</a></h3>
+<p>Vérification de la complétude, cohérence, précision et conformité des données géographiques.</p>
+<p><a class="reference internal" href="cq.html">Ouvrir le module Contrôle qualité</a></p>
+<section id="formats-esri"><h3>Formats ESRI<a class="headerlink" href="#formats-esri" title="Lien vers cette rubrique">¶</a></h3>
+<p>Formats SIG, shapefile, geodatabase, échanges de données, contraintes techniques et bonnes pratiques.</p>
+<p><a class="reference internal" href="fe.html">Ouvrir le module Formats ESRI</a></p>
+<section id="teledetection"><h3>Télédétection<a class="headerlink" href="#teledetection" title="Lien vers cette rubrique">¶</a></h3>
+<p>Images satellites, bandes spectrales, compositions colorées, indices, classification et traitements raster.</p>
+<p><a class="reference internal" href="tel.html">Ouvrir le module Télédétection</a></p>
+<section id="python-et-pyqgis"><h3>Python &amp; PyQGIS<a class="headerlink" href="#python-et-pyqgis" title="Lien vers cette rubrique">¶</a></h3>
+<p>Automatisation des tâches répétitives, scripts Python, traitements QGIS et logique de production.</p>
+<p><a class="reference internal" href="pp.html">Ouvrir le module Python &amp; PyQGIS</a></p>
+<section id="donnees-et-interoperabilite"><h3>Données &amp; interopérabilité<a class="headerlink" href="#donnees-et-interoperabilite" title="Lien vers cette rubrique">¶</a></h3>
+<p>Cycle de vie des données, métadonnées, VRT, droit informatique, publication et partage.</p>
+<p><a class="reference internal" href="com.html">Ouvrir le module Données &amp; interopérabilité</a></p>
+<section id="geomatique-sig-et-3d"><h3>Géomatique, SIG &amp; 3D<a class="headerlink" href="#geomatique-sig-et-3d" title="Lien vers cette rubrique">¶</a></h3>
+<p>QGIS, projections, couches vecteur/raster, analyse spatiale, cartographie et représentation 3D.</p>
+<p><a class="reference internal" href="3d.html">Ouvrir le module Géomatique, SIG &amp; 3D</a></p>
+<section id="focus-gestion-de-projet"><h2>Focus gestion de projet<a class="headerlink" href="#focus-gestion-de-projet" title="Lien vers cette rubrique">¶</a></h2>
+<p>Cette partie regroupe les méthodes utiles pour conduire un projet géomatique de manière structurée, depuis l'analyse du besoin jusqu'à la livraison.</p>
+<section id="objectifs"><h3>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple"><li><p>Comprendre le besoin et le contexte du projet.</p></li><li><p>Identifier les acteurs, rôles et responsabilités.</p></li><li><p>Définir les objectifs, livrables et contraintes.</p></li><li><p>Planifier les tâches et suivre l'avancement.</p></li><li><p>Anticiper les risques et organiser la communication.</p></li></ul>
+<section id="notions-cles"><h3>Notions clés<a class="headerlink" href="#notions-cles" title="Lien vers cette rubrique">¶</a></h3>
+<table class="docutils align-default"><thead><tr class="row-odd"><th class="head"><p>Notion</p></th><th class="head"><p>Utilité</p></th></tr></thead><tbody><tr class="row-even"><td><p><strong>Cadrage</strong></p></td><td><p>Clarifier le besoin, le périmètre et les objectifs.</p></td></tr>
+<tr class="row-odd"><td><p><strong>Acteurs</strong></p></td><td><p>Identifier les parties prenantes et leurs attentes.</p></td></tr>
+<tr class="row-even"><td><p><strong>Planning</strong></p></td><td><p>Organiser les étapes, délais et priorités.</p></td></tr>
+<tr class="row-odd"><td><p><strong>Risques</strong></p></td><td><p>Prévoir les blocages possibles et les réponses adaptées.</p></td></tr>
+<tr class="row-even"><td><p><strong>Livrables</strong></p></td><td><p>Formaliser les résultats attendus du projet.</p></td></tr></tbody></table>
+<section id="travaux-a-documenter"><h3>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h3>
+<ul class="simple"><li><p>Note de cadrage.</p></li><li><p>Planning de projet.</p></li><li><p>Liste des acteurs.</p></li><li><p>Tableau de suivi des tâches.</p></li><li><p>Analyse des risques.</p></li><li><p>Bilan ou retour d'expérience.</p></li></ul>
+<section id="competences-travaillees"><h2>Compétences travaillées<a class="headerlink" href="#competences-travaillees" title="Lien vers cette rubrique">¶</a></h2>
+<table class="docutils align-default"><thead><tr class="row-odd"><th class="head"><p>Compétence</p></th><th class="head"><p>Niveau visé</p></th></tr></thead><tbody><tr class="row-even"><td><p>Gestion de projet géomatique</p></td><td><p>Intermédiaire à avancé</p></td></tr>
+<tr class="row-odd"><td><p>PostgreSQL / PostGIS</p></td><td><p>Intermédiaire</p></td></tr>
+<tr class="row-even"><td><p>QGIS et analyse spatiale</p></td><td><p>Avancé</p></td></tr>
+<tr class="row-odd"><td><p>Python et PyQGIS</p></td><td><p>Progressif</p></td></tr>
+<tr class="row-even"><td><p>Télédétection</p></td><td><p>Intermédiaire</p></td></tr>
+<tr class="row-odd"><td><p>Contrôle qualité des données</p></td><td><p>Intermédiaire</p></td></tr>
+<tr class="row-even"><td><p>Documentation technique</p></td><td><p>Professionnel</p></td></tr></tbody></table>
+<div class="admonition note"><p class="admonition-title">Note</p><p>Cette documentation est évolutive. Les pages seront enrichies progressivement avec les notes de cours, les exercices, les commandes, les captures et les travaux pratiques réalisés pendant la formation.</p></div></div></div><footer><hr/><div role="contentinfo"><p>© Documentation CPGEOM.</p></div></footer></div></div></section></div><script>jQuery(function(){SphinxRtdTheme.Navigation.enable(true);});</script></body></html>

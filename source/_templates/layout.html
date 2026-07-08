@@ -1,0 +1,12 @@
+{% extends "!layout.html" %}
+
+{% block extrahead %}
+{{ super() }}
+{% if pagename == "index" %}
+<meta http-equiv="refresh" content="0; url=gp.html" />
+<link rel="canonical" href="gp.html" />
+<script>
+  window.location.replace("gp.html");
+</script>
+{% endif %}
+{% endblock %}

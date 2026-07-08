@@ -1,4 +1,4 @@
-﻿project = "Documentation CPGEOM"
+project = "Documentation CPGEOM"
 author = "Chafii Abdi Ahmed"
 
 extensions = [
@@ -13,6 +13,8 @@ source_suffix = {
 
 master_doc = "index"
 language = "fr"
+
+templates_path = ["_templates"]
 
 html_theme = "sphinx_rtd_theme"
 html_title = "Documentation CPGEOM"
