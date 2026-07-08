@@ -52,9 +52,9 @@ Ce site centralise mes **notes de cours**, mes **exercices**, mes **fiches de r�
 
 ---
 
+## Mes grandes thématiques
 
-
-# Gestion de projet
+### Gestion de projet
 
 ![Gestion de projet](images/gestion-de-projets.png)
 
@@ -75,7 +75,7 @@ On y retrouve notamment :
 
 ---
 
-# Base de données & PostGIS
+### Base de données & PostGIS
 
 ![PostgreSQL & PostGIS](images/postgis_postgreSQL.jpg)
 
@@ -97,7 +97,7 @@ Elle contient des notions sur :
 
 ---
 
-# Python & PyQGIS
+### Python & PyQGIS
 
 ![Python et PyQGIS](images/pyqgis.png)
 
@@ -116,7 +116,7 @@ Les objectifs sont :
 
 ---
 
-# Télédétection
+### Télédétection
 
 ![Télédétection](images/teledetection.png)
 
@@ -136,7 +136,7 @@ Elle contient par exemple :
 
 ---
 
-# Géomatique, SIG & 3D
+### Géomatique, SIG & 3D
 
 ![Géomatique et 3D](images/3d.png)
 
@@ -158,6 +158,20 @@ On y trouve :
 
 ---
 
+## Compétences travaillées
+
+| Compétence | Niveau visé |
+|---|---|
+| Gestion de projet géomatique | Intermédiaire à avancé |
+| PostgreSQL / PostGIS | Intermédiaire |
+| QGIS | Avancé |
+| Python | Progressif |
+| PyQGIS | Progressif |
+| Télédétection | Intermédiaire |
+| Contrôle qualité des données | Intermédiaire |
+| Documentation technique | Professionnel |
+
+---
 
 ## Ressources utiles
 
