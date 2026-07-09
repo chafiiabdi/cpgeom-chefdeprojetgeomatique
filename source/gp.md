@@ -10,13 +10,23 @@ Utilise cette page comme sommaire de travail : elle te permet de retrouver rapid
 
 ![Gestion de projet géomatique](images/gestion-de-projets.jpg)
 
+## Orientation rapide
+
+| Je veux... | Aller vers |
+|---|---|
+| Modifier le site | [Comment modifier le site](modifier.md) |
+| Comprendre le parcours de formation | [Parcours conseillé](#parcours-conseillé) |
+| Voir les conventions de lecture | [Conventions de lecture](#conventions-de-lecture) |
+| Accéder aux autres modules | [Modules de formation](#modules-de-formation) |
+| Revoir la méthode projet | [Focus gestion de projet](#focus-gestion-de-projet) |
+
 ## Organisation de la documentation
 
 La documentation est structurée autour d'un parcours progressif. Chaque module correspond à une compétence utile dans un projet géomatique.
 
 | Partie | Rôle dans la documentation |
 |---|---|
-| **Navigation latérale** | Accéder rapidement aux modules, comme dans la documentation QGIS. |
+| **Menu latéral** | Accéder rapidement au guide de modification et aux modules numérotés. |
 | **Sections principales** | Comprendre les objectifs, le parcours et les compétences. |
 | **Tableaux de repères** | Comparer rapidement les notions, outils et livrables. |
 | **Blocs d'information** | Mettre en avant les conseils, points d'attention et méthodes. |
@@ -87,11 +97,11 @@ Commence par la gestion de projet, puis avance vers les données, la qualité, l
 
 ## Modules de formation
 
-### Gestion de projet
+### 01 - Gestion de projet
 
 Méthodes de cadrage, organisation, planification, suivi, gestion des risques, communication et livrables.
 
-### Base de données & PostGIS
+### 02 - Base de données & PostGIS
 
 Notions de PostgreSQL, SQL, PostGIS, modélisation, géométries, index spatiaux et administration de bases géographiques.
 
@@ -99,37 +109,37 @@ Notions de PostgreSQL, SQL, PostGIS, modélisation, géométries, index spatiaux
 
 [Ouvrir le module Base de données & PostGIS](cours3.md)
 
-### Contrôle qualité
+### 03 - Contrôle qualité
 
 Vérification de la complétude, cohérence, précision et conformité des données géographiques.
 
 [Ouvrir le module Contrôle qualité](cq.md)
 
-### Formats ESRI
+### 04 - Formats ESRI
 
 Formats SIG, shapefile, geodatabase, échanges de données, contraintes techniques et bonnes pratiques.
 
 [Ouvrir le module Formats ESRI](fe.md)
 
-### Télédétection
+### 05 - Télédétection
 
 Images satellites, bandes spectrales, compositions colorées, indices, classification et traitements raster.
 
 [Ouvrir le module Télédétection](tel.md)
 
-### Python & PyQGIS
+### 06 - Python & PyQGIS
 
 Automatisation des tâches répétitives, scripts Python, traitements QGIS et logique de production.
 
 [Ouvrir le module Python & PyQGIS](pp.md)
 
-### Données & interopérabilité
+### 07 - Données & interopérabilité
 
 Cycle de vie des données, métadonnées, VRT, droit informatique, publication et partage.
 
 [Ouvrir le module Données & interopérabilité](com.md)
 
-### Géomatique, SIG & 3D
+### 08 - Géomatique, SIG & 3D
 
 QGIS, projections, couches vecteur/raster, analyse spatiale, cartographie et représentation 3D.
 
@@ -180,18 +190,4 @@ Cette partie regroupe les méthodes utiles pour conduire un projet géomatique d
 
 ```{important}
 La documentation est évolutive : chaque page pourra être enrichie avec les notes de cours, les exercices, les commandes, les captures et les travaux pratiques réalisés pendant la formation.
-```
-
-```{toctree}
-:maxdepth: 2
-:caption: Modules de formation
-:hidden:
-
-cours3
-cq
-fe
-tel
-pp
-com
-3d
 ```

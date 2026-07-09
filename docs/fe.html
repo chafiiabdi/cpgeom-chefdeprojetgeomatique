@@ -1,208 +1,269 @@
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="fr" data-content_root="./">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formats ESRI — Documentation CPGEOM</title>
-  <link rel="shortcut icon" href="_static/cpgeom-logo.svg" />
-  <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-  <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
-  <link rel="stylesheet" type="text/css" href="_static/custom.css" />
-  <script src="_static/jquery.js"></script>
-  <script src="_static/js/theme.js"></script>
+  <title>Formats ESRI &mdash; Documentation CPGEOM</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=37fadd65" />
+
+  
+    <link rel="shortcut icon" href="_static/cpgeom-logo.svg"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a393913"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Télédétection" href="tel.html" />
+    <link rel="prev" title="Contrôle qualité" href="cq.html" />
+ 
+
+
 </head>
 
-<body class="wy-body-for-nav">
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          <a href="gp.html" class="icon icon-home">
-            Documentation CPGEOM
-            <img src="_static/cpgeom-logo.svg" class="logo" alt="Logo CPGEOM" />
-          </a>
-          <div class="version">CPGEOM</div>
-          <div role="search">
-            <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
-              <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
-            </form>
-          </div>
-        </div>
+        <div class="wy-side-nav-search" >
 
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-            <p class="caption" role="heading"><span class="caption-text">Modules de formation</span></p>
-            <ul class="current">
-              <li class="toctree-l1 current"><a class="reference internal" href="gp.html">Gestion de projet</a>
-                  <ul>
-                    <li><a class="reference internal" href="#organisation-de-la-documentation">Organisation de la documentation</a></li>
-                    <li><a class="reference internal" href="#conventions-de-lecture">Conventions de lecture</a></li>
-                    <li><a class="reference internal" href="#objectifs-du-site">Objectifs du site</a></li>
-                    <li><a class="reference internal" href="#parcours-conseille">Parcours conseillé</a></li>
-                    <li><a class="reference internal" href="#modules-de-formation">Modules de formation</a></li>
-                    <li><a class="reference internal" href="#focus-gestion-de-projet">Focus gestion de projet</a></li>
-                    <li><a class="reference internal" href="#competences-travaillees">Compétences travaillées</a></li>
-                </ul>
-              </li>
-              <li class="toctree-l1"><a class="reference internal" href="cours3.html">Base de données &amp; PostGIS</a>
-                  <ul>
-                    <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                    <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
-                    <li><a class="reference internal" href="#requetes-a-maitriser">Requêtes à maîtriser</a></li>
-                    <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                  </ul>
-              </li>
-              <li class="toctree-l1"><a class="reference internal" href="cq.html">Contrôle qualité</a>
-                  <ul>
-                    <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                    <li><a class="reference internal" href="#criteres-de-controle">Critères de contrôle</a></li>
-                    <li><a class="reference internal" href="#methodes-possibles">Méthodes possibles</a></li>
-                    <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                </ul>
-              </li>
-              <li class="toctree-l1"><a class="reference internal" href="fe.html">Formats ESRI</a>
-                  <ul>
-                    <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                    <li><a class="reference internal" href="#formats-a-connaitre">Formats à connaître</a></li>
-                    <li><a class="reference internal" href="#points-de-vigilance">Points de vigilance</a></li>
-                    <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                </ul>
-              </li>
-              <li class="toctree-l1"><a class="reference internal" href="tel.html">Télédétection</a>
-                  <ul>
-                    <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                    <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
-                    <li><a class="reference internal" href="#traitements-courants">Traitements courants</a></li>
-                    <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                </ul>
-              </li>
-              <li class="toctree-l1"><a class="reference internal" href="pp.html">Python &amp; PyQGIS</a>
-                  <ul>
-                    <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                    <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
-                    <li><a class="reference internal" href="#exemples-de-taches-automatisables">Exemples de tâches automatisables</a></li>
-                    <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                </ul>
-              </li>
-              <li class="toctree-l1"><a class="reference internal" href="com.html">Données &amp; interopérabilité</a>
-                  <ul>
-                    <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                    <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
-                    <li><a class="reference internal" href="#bonnes-pratiques">Bonnes pratiques</a></li>
-                    <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                </ul>
-              </li>
-              <li class="toctree-l1"><a class="reference internal" href="3d.html">Géomatique, SIG &amp; 3D</a>
-                  <ul>
-                    <li><a class="reference internal" href="#objectifs">Objectifs</a></li>
-                    <li><a class="reference internal" href="#notions-cles">Notions clés</a></li>
-                    <li><a class="reference internal" href="#travaux-possibles">Travaux possibles</a></li>
-                    <li><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
-                </ul>
-              </li>
-            </ul>
-            
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Documentation CPGEOM
+              <img src="_static/cpgeom-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Guide de modification</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modifier.html">Comment modifier le site</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#fichiers-a-modifier">Fichiers à modifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#fichiers-a-ne-pas-modifier-directement">Fichiers à ne pas modifier directement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#modifier-une-page">Modifier une page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#ajouter-une-page-au-menu">Ajouter une page au menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#regenerer-le-site">Régénérer le site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#publier-les-modifications">Publier les modifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#regle-simple-a-retenir">Règle simple à retenir</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Parcours CPGEOM</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="gp.html">01 - Accueil / Gestion de projet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#orientation-rapide">Orientation rapide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#organisation-de-la-documentation">Organisation de la documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#conventions-de-lecture">Conventions de lecture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#blocs-d-information">Blocs d’information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#liens-et-navigation">Liens et navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#noms-et-commandes">Noms et commandes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#objectifs-du-site">Objectifs du site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#parcours-conseille">Parcours conseillé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#modules-de-formation">Modules de formation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#id1">01 - Gestion de projet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#base-de-donnees-postgis">02 - Base de données &amp; PostGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#controle-qualite">03 - Contrôle qualité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#formats-esri">04 - Formats ESRI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#teledetection">05 - Télédétection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#python-pyqgis">06 - Python &amp; PyQGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#donnees-interoperabilite">07 - Données &amp; interopérabilité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#geomatique-sig-3d">08 - Géomatique, SIG &amp; 3D</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#focus-gestion-de-projet">Focus gestion de projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#objectifs">Objectifs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#competences-travaillees">Compétences travaillées</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cours3.html">02 - Base de données &amp; PostGIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#requetes-a-maitriser">Requêtes à maîtriser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cq.html">03 - Contrôle qualité</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#criteres-de-controle">Critères de contrôle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#methodes-possibles">Méthodes possibles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">04 - Formats ESRI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formats-a-connaitre">Formats à connaître</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#points-de-vigilance">Points de vigilance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tel.html">05 - Télédétection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#traitements-courants">Traitements courants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pp.html">06 - Python &amp; PyQGIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#exemples-de-taches-automatisables">Exemples de tâches automatisables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="com.html">07 - Données &amp; interopérabilité</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="com.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="com.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="com.html#bonnes-pratiques">Bonnes pratiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="com.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3d.html">08 - Géomatique, SIG &amp; 3D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#travaux-possibles">Travaux possibles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+</ul>
+
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" aria-label="Mobile navigation menu">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="gp.html">Documentation CPGEOM</a>
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Documentation CPGEOM</a>
       </nav>
 
       <div class="wy-nav-content">
         <div class="rst-content style-external-links">
           <div role="navigation" aria-label="Page navigation">
-            <ul class="wy-breadcrumbs">
-              <li><a href="gp.html" class="icon icon-home" aria-label="Home"></a></li>
-              <li class="breadcrumb-item active">Formats ESRI</li>
-            </ul>
-            <hr/>
-          </div>
-
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Formats ESRI</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/fe.md.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="cq.html" class="btn btn-neutral float-left" title="Contrôle qualité" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="tel.html" class="btn btn-neutral float-right" title="Télédétection" accesskey="n">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div itemprop="articleBody">
-          <section id="formats-esri">
-            <h1>Formats ESRI<a class="headerlink" href="#formats-esri" title="Lien vers cette rubrique">¶</a></h1>
-          <p>Cette partie présente les formats SIG utilisés pour stocker, échanger et exploiter des données géographiques.</p>
-          <section id="objectifs">
-            <h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique">¶</a></h2>
-          <ul class="simple">
-            <li><p>Comprendre les principaux formats de données SIG.</p></li>
-            <li><p>Identifier les avantages et limites du shapefile.</p></li>
-            <li><p>Utiliser une geodatabase lorsque le projet le nécessite.</p></li>
-            <li><p>Préparer des données pour l'échange entre logiciels.</p></li>
-            <li><p>Choisir un format adapté au contexte de production.</p></li>
-          </ul>
-          <section id="formats-a-connaitre">
-            <h2>Formats à connaître<a class="headerlink" href="#formats-a-connaitre" title="Lien vers cette rubrique">¶</a></h2>
-          <table class="docutils align-default">
-            <thead>
-            <tr class="row-odd">
-              <th class="head"><p>Format</p></th>
-              <th class="head"><p>Usage principal</p></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr class="row-even">
-              <td><p><strong>Shapefile</strong></p></td>
-              <td><p>Format historique très utilisé pour les données vecteur.</p></td>
-            </tr>
-            <tr class="row-odd">
-              <td><p><strong>Geodatabase</strong></p></td>
-              <td><p>Stockage structuré de données SIG dans l'environnement ESRI.</p></td>
-            </tr>
-            <tr class="row-even">
-              <td><p><strong>GeoPackage</strong></p></td>
-              <td><p>Format ouvert pratique pour échanger des couches SIG.</p></td>
-            </tr>
-            <tr class="row-odd">
-              <td><p><strong>CSV</strong></p></td>
-              <td><p>Échange de données tabulaires, parfois avec coordonnées.</p></td>
-            </tr>
-            <tr class="row-even">
-              <td><p><strong>GeoJSON</strong></p></td>
-              <td><p>Données géographiques adaptées au web.</p></td>
-            </tr>
-            </tbody>
-          </table>
-          <section id="points-de-vigilance">
-            <h2>Points de vigilance<a class="headerlink" href="#points-de-vigilance" title="Lien vers cette rubrique">¶</a></h2>
-          <ul class="simple">
-            <li><p>Encodage des caractères.</p></li>
-            <li><p>Projection et système de coordonnées.</p></li>
-            <li><p>Longueur des noms de champs.</p></li>
-            <li><p>Types de géométries.</p></li>
-            <li><p>Poids des fichiers.</p></li>
-            <li><p>Compatibilité avec les logiciels utilisés.</p></li>
-          </ul>
-          <section id="travaux-a-documenter">
-            <h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique">¶</a></h2>
-          <ul class="simple">
-            <li><p>Conversion de formats.</p></li>
-            <li><p>Import/export depuis QGIS.</p></li>
-            <li><p>Vérification de projection.</p></li>
-            <li><p>Contrôle des champs après conversion.</p></li>
-          </ul>
-            </div>
-          </div>
+           <div itemprop="articleBody">
+             
+  <section id="formats-esri">
+<h1>Formats ESRI<a class="headerlink" href="#formats-esri" title="Lien vers cette rubrique"></a></h1>
+<p>Cette partie présente les formats SIG utilisés pour stocker, échanger et exploiter des données géographiques.</p>
+<section id="objectifs">
+<h2>Objectifs<a class="headerlink" href="#objectifs" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Comprendre les principaux formats de données SIG.</p></li>
+<li><p>Identifier les avantages et limites du shapefile.</p></li>
+<li><p>Utiliser une geodatabase lorsque le projet le nécessite.</p></li>
+<li><p>Préparer des données pour l’échange entre logiciels.</p></li>
+<li><p>Choisir un format adapté au contexte de production.</p></li>
+</ul>
+</section>
+<section id="formats-a-connaitre">
+<h2>Formats à connaître<a class="headerlink" href="#formats-a-connaitre" title="Lien vers cette rubrique"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Format</p></th>
+<th class="head"><p>Usage principal</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>Shapefile</strong></p></td>
+<td><p>Format historique très utilisé pour les données vecteur.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>Geodatabase</strong></p></td>
+<td><p>Stockage structuré de données SIG dans l’environnement ESRI.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>GeoPackage</strong></p></td>
+<td><p>Format ouvert pratique pour échanger des couches SIG.</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>CSV</strong></p></td>
+<td><p>Échange de données tabulaires, parfois avec coordonnées.</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>GeoJSON</strong></p></td>
+<td><p>Données géographiques adaptées au web.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="points-de-vigilance">
+<h2>Points de vigilance<a class="headerlink" href="#points-de-vigilance" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Encodage des caractères.</p></li>
+<li><p>Projection et système de coordonnées.</p></li>
+<li><p>Longueur des noms de champs.</p></li>
+<li><p>Types de géométries.</p></li>
+<li><p>Poids des fichiers.</p></li>
+<li><p>Compatibilité avec les logiciels utilisés.</p></li>
+</ul>
+</section>
+<section id="travaux-a-documenter">
+<h2>Travaux à documenter<a class="headerlink" href="#travaux-a-documenter" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Conversion de formats.</p></li>
+<li><p>Import/export depuis QGIS.</p></li>
+<li><p>Vérification de projection.</p></li>
+<li><p>Contrôle des champs après conversion.</p></li>
+</ul>
+</section>
+</section>
 
-          <footer>
-            <hr/>
-            <div role="contentinfo">
-              <p>© Documentation CPGEOM.</p>
-            </div>
-          </footer>
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="cq.html" class="btn btn-neutral float-left" title="Contrôle qualité" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="tel.html" class="btn btn-neutral float-right" title="Télédétection" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur .</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
     </section>
   </div>
-
   <script>
-    jQuery(function () {
-      SphinxRtdTheme.Navigation.enable(true);
-    });
-  </script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
 </body>
 </html>

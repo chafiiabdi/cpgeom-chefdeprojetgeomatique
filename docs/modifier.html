@@ -1,0 +1,340 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comment modifier le site &mdash; Documentation CPGEOM</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=37fadd65" />
+
+  
+    <link rel="shortcut icon" href="_static/cpgeom-logo.svg"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a393913"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Gestion de projet" href="gp.html" />
+    <link rel="prev" title="Accueil technique" href="index.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Documentation CPGEOM
+              <img src="_static/cpgeom-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Guide de modification</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Comment modifier le site</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fichiers-a-modifier">Fichiers à modifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fichiers-a-ne-pas-modifier-directement">Fichiers à ne pas modifier directement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modifier-une-page">Modifier une page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ajouter-une-page-au-menu">Ajouter une page au menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regenerer-le-site">Régénérer le site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#publier-les-modifications">Publier les modifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#regle-simple-a-retenir">Règle simple à retenir</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Parcours CPGEOM</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="gp.html">01 - Accueil / Gestion de projet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#orientation-rapide">Orientation rapide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#organisation-de-la-documentation">Organisation de la documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#conventions-de-lecture">Conventions de lecture</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#blocs-d-information">Blocs d’information</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#liens-et-navigation">Liens et navigation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#noms-et-commandes">Noms et commandes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#objectifs-du-site">Objectifs du site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#parcours-conseille">Parcours conseillé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#modules-de-formation">Modules de formation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#id1">01 - Gestion de projet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#base-de-donnees-postgis">02 - Base de données &amp; PostGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#controle-qualite">03 - Contrôle qualité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#formats-esri">04 - Formats ESRI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#teledetection">05 - Télédétection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#python-pyqgis">06 - Python &amp; PyQGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#donnees-interoperabilite">07 - Données &amp; interopérabilité</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#geomatique-sig-3d">08 - Géomatique, SIG &amp; 3D</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#focus-gestion-de-projet">Focus gestion de projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#objectifs">Objectifs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gp.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gp.html#competences-travaillees">Compétences travaillées</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cours3.html">02 - Base de données &amp; PostGIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#requetes-a-maitriser">Requêtes à maîtriser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cours3.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cq.html">03 - Contrôle qualité</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#criteres-de-controle">Critères de contrôle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#methodes-possibles">Méthodes possibles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cq.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fe.html">04 - Formats ESRI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fe.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fe.html#formats-a-connaitre">Formats à connaître</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fe.html#points-de-vigilance">Points de vigilance</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fe.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tel.html">05 - Télédétection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#traitements-courants">Traitements courants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tel.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pp.html">06 - Python &amp; PyQGIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#exemples-de-taches-automatisables">Exemples de tâches automatisables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pp.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="com.html">07 - Données &amp; interopérabilité</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="com.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="com.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="com.html#bonnes-pratiques">Bonnes pratiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="com.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3d.html">08 - Géomatique, SIG &amp; 3D</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#objectifs">Objectifs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#travaux-possibles">Travaux possibles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3d.html#travaux-a-documenter">Travaux à documenter</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Documentation CPGEOM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Comment modifier le site</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modifier.md.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="index.html" class="btn btn-neutral float-left" title="Accueil technique" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="gp.html" class="btn btn-neutral float-right" title="Gestion de projet" accesskey="n">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="comment-modifier-le-site">
+<h1>Comment modifier le site<a class="headerlink" href="#comment-modifier-le-site" title="Lien vers cette rubrique"></a></h1>
+<p>Cette page explique où modifier le contenu du site et comment publier les changements.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Pour modifier le contenu, travaille toujours dans le dossier <code class="docutils literal notranslate"><span class="pre">source/</span></code>. Le dossier <code class="docutils literal notranslate"><span class="pre">docs/</span></code> contient le site généré pour GitHub Pages.</p>
+</div>
+<section id="fichiers-a-modifier">
+<h2>Fichiers à modifier<a class="headerlink" href="#fichiers-a-modifier" title="Lien vers cette rubrique"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Je veux modifier…</p></th>
+<th class="head"><p>Fichier à ouvrir</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>La page d’accueil affichée par défaut</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/gp.md</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Le menu et l’ordre des pages</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/index.md</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>La page Base de données &amp; PostGIS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/cours3.md</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>La page Contrôle qualité</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/cq.md</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>La page Formats ESRI</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/fe.md</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>La page Télédétection</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/tel.md</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>La page Python &amp; PyQGIS</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/pp.md</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>La page Données &amp; interopérabilité</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/com.md</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>La page Géomatique, SIG &amp; 3D</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/3d.md</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Les couleurs, tailles, tableaux et blocs visuels</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/_static/custom.css</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Le logo</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/_static/cpgeom-logo.svg</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>La configuration générale Sphinx</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">source/conf.py</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="fichiers-a-ne-pas-modifier-directement">
+<h2>Fichiers à ne pas modifier directement<a class="headerlink" href="#fichiers-a-ne-pas-modifier-directement" title="Lien vers cette rubrique"></a></h2>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Fichier ou dossier</p></th>
+<th class="head"><p>Pourquoi</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">docs/*.html</span></code></p></td>
+<td><p>Ce sont les pages générées pour le site publié.</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">docs/_sources/*.txt</span></code></p></td>
+<td><p>Ce sont des copies générées des fichiers Markdown.</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">docs/_static/*</span></code></p></td>
+<td><p>Ces fichiers sont recopiés depuis <code class="docutils literal notranslate"><span class="pre">source/_static/</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Si tu modifies directement un fichier dans <code class="docutils literal notranslate"><span class="pre">docs/</span></code>, le changement risque d’être perdu lors de la prochaine génération du site.</p>
+</div>
+</section>
+<section id="modifier-une-page">
+<h2>Modifier une page<a class="headerlink" href="#modifier-une-page" title="Lien vers cette rubrique"></a></h2>
+<ol class="arabic simple">
+<li><p>Ouvre le fichier Markdown dans <code class="docutils literal notranslate"><span class="pre">source/</span></code>.</p></li>
+<li><p>Modifie le texte, les titres, les tableaux ou les listes.</p></li>
+<li><p>Enregistre le fichier.</p></li>
+<li><p>Régénère le site.</p></li>
+<li><p>Vérifie le résultat dans <code class="docutils literal notranslate"><span class="pre">docs/</span></code>.</p></li>
+<li><p>Fais le commit et le push.</p></li>
+</ol>
+</section>
+<section id="ajouter-une-page-au-menu">
+<h2>Ajouter une page au menu<a class="headerlink" href="#ajouter-une-page-au-menu" title="Lien vers cette rubrique"></a></h2>
+<ol class="arabic simple">
+<li><p>Crée un nouveau fichier Markdown dans <code class="docutils literal notranslate"><span class="pre">source/</span></code>, par exemple <code class="docutils literal notranslate"><span class="pre">nouveau-module.md</span></code>.</p></li>
+<li><p>Ajoute un titre principal au début du fichier.</p></li>
+<li><p>Ouvre <code class="docutils literal notranslate"><span class="pre">source/index.md</span></code>.</p></li>
+<li><p>Ajoute la page dans le bloc <code class="docutils literal notranslate"><span class="pre">toctree</span></code>.</p></li>
+</ol>
+<p>Exemple :</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>09 - Nouveau module &lt;nouveau-module&gt;
+</pre></div>
+</div>
+</section>
+<section id="regenerer-le-site">
+<h2>Régénérer le site<a class="headerlink" href="#regenerer-le-site" title="Lien vers cette rubrique"></a></h2>
+<p>La commande Sphinx normale est :</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">-m</span> <span class="n">sphinx</span> <span class="n">-b</span> <span class="n">html</span> <span class="n">source</span> <span class="n">docs</span>
+</pre></div>
+</div>
+<p>Si Python ou Sphinx n’est pas installé, installe les dépendances du projet :</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">-m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+</pre></div>
+</div>
+</section>
+<section id="publier-les-modifications">
+<h2>Publier les modifications<a class="headerlink" href="#publier-les-modifications" title="Lien vers cette rubrique"></a></h2>
+<p>Après vérification :</p>
+<div class="highlight-powershell notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="n">source</span> <span class="n">docs</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">&quot;Mise à jour documentation&quot;</span>
+<span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">main</span>
+</pre></div>
+</div>
+</section>
+<section id="regle-simple-a-retenir">
+<h2>Règle simple à retenir<a class="headerlink" href="#regle-simple-a-retenir" title="Lien vers cette rubrique"></a></h2>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>source/ = ce que tu modifies
+docs/   = ce que GitHub Pages affiche
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="index.html" class="btn btn-neutral float-left" title="Accueil technique" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="gp.html" class="btn btn-neutral float-right" title="Gestion de projet" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur .</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

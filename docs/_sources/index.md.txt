@@ -1,18 +1,26 @@
-# Accueil
+# Accueil technique
 
-La page principale du site est désormais le module [Gestion de projet](gp.md).
+Cette page sert uniquement à organiser la navigation Sphinx.
+
+Le site publié redirige automatiquement vers [01 - Accueil / Gestion de projet](gp.md).
 
 ```{toctree}
 :maxdepth: 2
-:caption: Modules de formation
-:hidden:
+:caption: Guide de modification
 
-gp
-cours3
-cq
-fe
-tel
-pp
-com
-3d
+Comment modifier le site <modifier>
+```
+
+```{toctree}
+:maxdepth: 2
+:caption: Parcours CPGEOM
+
+01 - Accueil / Gestion de projet <gp>
+02 - Base de données & PostGIS <cours3>
+03 - Contrôle qualité <cq>
+04 - Formats ESRI <fe>
+05 - Télédétection <tel>
+06 - Python & PyQGIS <pp>
+07 - Données & interopérabilité <com>
+08 - Géomatique, SIG & 3D <3d>
 ```
