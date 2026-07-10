@@ -1,64 +1,54 @@
-site_name: Plateforme de documentation en Géomatique
-site_description: Documentation CPGEOM pour les cours et ressources de géomatique
+site_name: Documentation Géomatique
+site_description: Plateforme de documentation en géomatique
 site_author: Chafii Abdi Ahmed
-site_url: https://chafiiabdi.github.io/cpgeom-chefdeprojetgeomatique/
-
-docs_dir: source
-site_dir: docs
-use_directory_urls: false
 
 theme:
-  name: rtd-dropdown
-  locale: fr
-  highlightjs: true
-  hljs_languages:
-    - sql
-    - python
-    - bash
+  name: material
+  language: fr
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.code.copy
 
 nav:
-  - Contexte: index.md
+  - Accueil: index.md
+
+  - Contexte: contexte.md
+
   - Gestion de projet:
-      - Vue d'ensemble: gestion-projet.md
-      - Type de gestion de projet: gestion-type.md
-      - Périmètres du projet: gestion-perimetres.md
-      - Répartition des tâches: gestion-repartition-taches.md
-      - Risques: gestion-risques.md
-      - Gouvernance: gestion-gouvernance.md
+      - Type de gestion de projet: gestion-projet/type-gestion.md
+      - Périmètres du projet: gestion-projet/perimetres.md
+      - Répartition des tâches: gestion-projet/repartition-taches.md
+      - Risques: gestion-projet/risques.md
+      - Gouvernance: gestion-projet/gouvernance.md
+
   - Base de données:
-      - Vue d'ensemble: base-donnees.md
-      - Introduction de la base de données: bdd-introduction.md
-      - Admin BDD & PgSQL: bdd-admin-pgsql.md
-      - PostGIS: bdd-postgis.md
+      - Introduction de la base de données: base-donnees/introduction.md
+      - Admin BDD & PgSQL: base-donnees/admin-bdd-pgsql.md
+      - PostGIS: base-donnees/postgis.md
+
   - Contrôle qualité des données:
-      - Vue d'ensemble: controle-qualite-donnees.md
-      - ISO 19115: cq-iso-19115.md
-      - Aspect juridique: cq-aspect-juridique.md
+      - ISO 19115: controle-qualite/iso-19115.md
+      - Aspect juridique: controle-qualite/aspect-juridique.md
+
   - Formats ESRI: formats-esri.md
+
   - Télédétection:
-      - Vue d'ensemble: teledetection.md
-      - Introduction de la télédétection: teledetection-introduction.md
-      - Télédétection optique: teledetection-optique.md
-      - Télédétection LiDAR: teledetection-lidar.md
-      - Télédétection Radar: teledetection-radar.md
+      - Introduction de la télédétection: teledetection/introduction.md
+      - Télédétection optique: teledetection/optique.md
+      - Télédétection LiDAR: teledetection/lidar.md
+      - Télédétection Radar: teledetection/radar.md
+
   - Python & PyQGIS:
-      - Vue d'ensemble: python-pyqgis.md
-      - Introduction de Python: python-introduction.md
-      - PyQGIS: pyqgis.md
+      - Introduction de Python: python-pyqgis/introduction-python.md
+      - PyQGIS: python-pyqgis/pyqgis.md
+
   - Données & Interopérabilité:
-      - Vue d'ensemble: donnees-interoperabilite.md
-      - VRT: donnees-vrt.md
-      - Droit de données: donnees-droit.md
-      - Cycle de données: donnees-cycle.md
-      - Métadonnées: donnees-metadonnees.md
-  - Modifier le site: modifier.md
-
-markdown_extensions:
-  - admonition
-  - toc:
-      permalink: true
-  - tables
-  - attr_list
-
-extra_css:
-  - stylesheets/cpgeom.css
+      - VRT: donnees-interoperabilite/vrt.md
+      - Droit des données: donnees-interoperabilite/droit-donnees.md
+      - Cycle de données: donnees-interoperabilite/cycle-donnees.md
+      - Métadonnées: donnees-interoperabilite/metadonnees.md
