@@ -1,58 +1,66 @@
-# Comment modifier le site
+# Modifier le site
 
-Cette page explique clairement où modifier le contenu du site.
-
-```{important}
-Modifie les fichiers `.md` dans `source/`. Ne modifie pas directement les fichiers `.html` dans `docs/`, car ils sont générés.
-```
+Cette documentation utilise **MkDocs** avec le thème **Read the Docs Dropdown**.
 
 ## Règle simple
 
 ```text
-source/ = fichiers Markdown que tu modifies
-docs/   = site HTML affiché par GitHub Pages
+source/    = fichiers Markdown que tu modifies
+mkdocs.yml = menu et configuration du site
+docs/      = site HTML généré pour GitHub Pages
 ```
 
-## Modifier une page
+## Modifier le contenu d'une page
 
-| Je veux modifier... | Fichier à ouvrir |
-|---|---|
-| La page d'entrée | `source/contexte.md` |
-| Le menu principal | `source/index.md` |
-| Gestion de projet | `source/gestion-projet.md` |
-| Base de données | `source/base-donnees.md` |
-| Contrôle qualité des données | `source/controle-qualite-donnees.md` |
-| Formats ESRI | `source/formats-esri.md` |
-| Télédétection | `source/teledetection.md` |
-| Python & PyQGIS | `source/python-pyqgis.md` |
-| Données & Interopérabilité | `source/donnees-interoperabilite.md` |
-| Couleurs et apparence | `source/_static/custom.css` |
-| Logo | `source/_static/cpgeom-logo.svg` |
-
-## Ajouter un sous-bloc
-
-1. Crée un fichier `.md` dans `source/`, par exemple `gestion-budget.md`.
-2. Ajoute un titre principal avec `# Budget`.
-3. Ouvre la page du bloc parent, par exemple `source/gestion-projet.md`.
-4. Ajoute la nouvelle page dans le bloc `toctree`.
+1. Ouvre un fichier `.md` dans le dossier `source/`.
+2. Modifie le texte, les titres, les listes ou les tableaux.
+3. Enregistre le fichier.
+4. Régénère le site avec MkDocs.
 
 Exemple :
 
-```md
-Budget <gestion-budget>
+```text
+source/base-donnees.md
+source/gestion-projet.md
+source/teledetection.md
 ```
 
-## Ajouter un bloc principal
+## Modifier le menu
 
-1. Crée une page dans `source/`, par exemple `cartographie.md`.
-2. Ouvre `source/index.md`.
-3. Ajoute la page dans le `toctree` du menu principal.
+Le menu se trouve dans :
 
-Exemple :
-
-```md
-Cartographie <cartographie>
+```text
+mkdocs.yml
 ```
+
+Exemple de bloc de menu :
+
+```yaml
+- Base de données:
+    - Vue d'ensemble: base-donnees.md
+    - Introduction de la base de données: bdd-introduction.md
+    - Admin BDD & PgSQL: bdd-admin-pgsql.md
+    - PostGIS: bdd-postgis.md
+```
+
+Pour ajouter une nouvelle page :
+
+1. Crée un fichier dans `source/`, par exemple `bdd-modelisation.md`.
+2. Ajoute cette ligne dans `mkdocs.yml` :
+
+```yaml
+- Modélisation BDD: bdd-modelisation.md
+```
+
+## Modifier l'apparence
+
+Le style personnalisé est dans :
+
+```text
+source/stylesheets/cpgeom.css
+```
+
+Tu peux y modifier les couleurs, la largeur du menu, les titres et les tableaux.
 
 ## Générer le site
 
@@ -62,16 +70,16 @@ Depuis le dossier du projet :
 powershell -ExecutionPolicy Bypass -File .\build-docs.ps1
 ```
 
-Si Sphinx n'est pas encore installé :
+Ou directement :
 
 ```powershell
-python -m pip install -r requirements.txt
+python -m mkdocs build --clean
 ```
 
 ## Publier
 
 ```powershell
-git add source docs README.md build-docs.ps1
-git commit -m "Mise à jour documentation"
+git add -A
+git commit -m "Mise à jour documentation MkDocs"
 git push origin main
 ```

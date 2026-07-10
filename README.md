@@ -1,40 +1,58 @@
 # Documentation CPGEOM
 
-Ce dépôt utilise maintenant une version **basique HTML/CSS** pour GitHub Pages.
+Ce dépôt utilise **MkDocs** avec un thème proche de **Read the Docs**.
 
-## Fichiers à modifier
+## Fichiers importants
 
-| Besoin | Fichier |
+| Besoin | Fichier ou dossier |
 |---|---|
-| Modifier le contenu, les titres, les textes et le menu | `docs/index.html` |
-| Modifier les couleurs, tailles, espacements et la barre latérale | `docs/style.css` |
-| Modifier le logo | `docs/_static/cpgeom-logo.svg` |
+| Modifier les pages | `source/*.md` |
+| Modifier le menu | `mkdocs.yml` |
+| Modifier le style | `source/stylesheets/cpgeom.css` |
+| Site généré pour GitHub Pages | `docs/` |
 
-## Règle simple
+## Installer les dépendances
 
-```text
-docs/index.html = contenu du site
-docs/style.css  = apparence du site
+```powershell
+python -m pip install -r requirements.txt
 ```
 
-Le dossier `source/` vient de l'ancienne version Sphinx. Tu peux le garder comme sauvegarde, mais il n'est plus nécessaire pour modifier la page basique.
+## Générer le site
 
-## Publier les modifications
+```powershell
+powershell -ExecutionPolicy Bypass -File .\build-docs.ps1
+```
 
-Depuis le dossier du projet :
+Ou :
+
+```powershell
+python -m mkdocs build --clean
+```
+
+## Voir le site en local
+
+```powershell
+python -m mkdocs serve
+```
+
+Puis ouvrir :
+
+```text
+http://127.0.0.1:8000
+```
+
+## Publier sur GitHub Pages
 
 ```powershell
 git add -A
-git commit -m "Modifier documentation"
+git commit -m "Mise à jour documentation MkDocs"
 git push origin main
 ```
 
-## Page affichée par défaut
-
-GitHub Pages affiche automatiquement :
+## Règle à retenir
 
 ```text
-docs/index.html
+source/    = contenu Markdown
+mkdocs.yml = menu
+docs/      = HTML généré pour GitHub Pages
 ```
-
-Il n'y a plus besoin de lancer `build-docs.ps1` pour cette version basique.
