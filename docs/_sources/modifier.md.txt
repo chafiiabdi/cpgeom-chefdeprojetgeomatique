@@ -1,89 +1,77 @@
 # Comment modifier le site
 
-Cette page explique où modifier le contenu du site et comment publier les changements.
+Cette page explique clairement où modifier le contenu du site.
 
 ```{important}
-Pour modifier le contenu, travaille toujours dans le dossier `source/`. Le dossier `docs/` contient le site généré pour GitHub Pages.
+Modifie les fichiers `.md` dans `source/`. Ne modifie pas directement les fichiers `.html` dans `docs/`, car ils sont générés.
 ```
 
-## Fichiers à modifier
+## Règle simple
 
-| Je veux modifier... | Fichier à ouvrir |
-|---|---|
-| La page d'accueil affichée par défaut | `source/gp.md` |
-| Le menu et l'ordre des pages | `source/index.md` |
-| La page Base de données & PostGIS | `source/cours3.md` |
-| La page Contrôle qualité | `source/cq.md` |
-| La page Formats ESRI | `source/fe.md` |
-| La page Télédétection | `source/tel.md` |
-| La page Python & PyQGIS | `source/pp.md` |
-| La page Données & interopérabilité | `source/com.md` |
-| La page Géomatique, SIG & 3D | `source/3d.md` |
-| Les couleurs, tailles, tableaux et blocs visuels | `source/_static/custom.css` |
-| Le logo | `source/_static/cpgeom-logo.svg` |
-| La configuration générale Sphinx | `source/conf.py` |
-
-## Fichiers à ne pas modifier directement
-
-| Fichier ou dossier | Pourquoi |
-|---|---|
-| `docs/*.html` | Ce sont les pages générées pour le site publié. |
-| `docs/_sources/*.txt` | Ce sont des copies générées des fichiers Markdown. |
-| `docs/_static/*` | Ces fichiers sont recopiés depuis `source/_static/`. |
-
-```{note}
-Si tu modifies directement un fichier dans `docs/`, le changement risque d'être perdu lors de la prochaine génération du site.
+```text
+source/ = fichiers Markdown que tu modifies
+docs/   = site HTML affiché par GitHub Pages
 ```
 
 ## Modifier une page
 
-1. Ouvre le fichier Markdown dans `source/`.
-2. Modifie le texte, les titres, les tableaux ou les listes.
-3. Enregistre le fichier.
-4. Régénère le site.
-5. Vérifie le résultat dans `docs/`.
-6. Fais le commit et le push.
+| Je veux modifier... | Fichier à ouvrir |
+|---|---|
+| La page d'entrée | `source/contexte.md` |
+| Le menu principal | `source/index.md` |
+| Gestion de projet | `source/gestion-projet.md` |
+| Base de données | `source/base-donnees.md` |
+| Contrôle qualité des données | `source/controle-qualite-donnees.md` |
+| Formats ESRI | `source/formats-esri.md` |
+| Télédétection | `source/teledetection.md` |
+| Python & PyQGIS | `source/python-pyqgis.md` |
+| Données & Interopérabilité | `source/donnees-interoperabilite.md` |
+| Couleurs et apparence | `source/_static/custom.css` |
+| Logo | `source/_static/cpgeom-logo.svg` |
 
-## Ajouter une page au menu
+## Ajouter un sous-bloc
 
-1. Crée un nouveau fichier Markdown dans `source/`, par exemple `nouveau-module.md`.
-2. Ajoute un titre principal au début du fichier.
-3. Ouvre `source/index.md`.
-4. Ajoute la page dans le bloc `toctree`.
+1. Crée un fichier `.md` dans `source/`, par exemple `gestion-budget.md`.
+2. Ajoute un titre principal avec `# Budget`.
+3. Ouvre la page du bloc parent, par exemple `source/gestion-projet.md`.
+4. Ajoute la nouvelle page dans le bloc `toctree`.
 
 Exemple :
 
 ```md
-09 - Nouveau module <nouveau-module>
+Budget <gestion-budget>
 ```
 
-## Régénérer le site
+## Ajouter un bloc principal
 
-La commande Sphinx normale est :
+1. Crée une page dans `source/`, par exemple `cartographie.md`.
+2. Ouvre `source/index.md`.
+3. Ajoute la page dans le `toctree` du menu principal.
+
+Exemple :
+
+```md
+Cartographie <cartographie>
+```
+
+## Générer le site
+
+Depuis le dossier du projet :
 
 ```powershell
-python -m sphinx -b html source docs
+powershell -ExecutionPolicy Bypass -File .\build-docs.ps1
 ```
 
-Si Python ou Sphinx n'est pas installé, installe les dépendances du projet :
+Si Sphinx n'est pas encore installé :
 
 ```powershell
 python -m pip install -r requirements.txt
 ```
 
-## Publier les modifications
-
-Après vérification :
+## Publier
 
 ```powershell
-git add source docs
+git add source docs README.md build-docs.ps1
 git commit -m "Mise à jour documentation"
 git push origin main
-```
-
-## Règle simple à retenir
-
-```text
-source/ = ce que tu modifies
-docs/   = ce que GitHub Pages affiche
 ```

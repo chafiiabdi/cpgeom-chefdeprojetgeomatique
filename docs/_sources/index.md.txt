@@ -1,26 +1,20 @@
 # Accueil technique
 
-Cette page sert uniquement à organiser la navigation Sphinx.
+Cette page sert à organiser la navigation Sphinx.
 
-Le site publié redirige automatiquement vers [01 - Accueil / Gestion de projet](gp.md).
+Le site publié redirige automatiquement vers [Contexte](contexte.md).
 
 ```{toctree}
-:maxdepth: 2
-:caption: Guide de modification
+:maxdepth: 3
+:caption: Menu principal
 
+Contexte <contexte>
+Gestion de projet <gestion-projet>
+Base de données <base-donnees>
+Contrôle qualité des données <controle-qualite-donnees>
+Formats ESRI <formats-esri>
+Télédétection <teledetection>
+Python & PyQGIS <python-pyqgis>
+Données & Interopérabilité <donnees-interoperabilite>
 Comment modifier le site <modifier>
-```
-
-```{toctree}
-:maxdepth: 2
-:caption: Parcours CPGEOM
-
-01 - Accueil / Gestion de projet <gp>
-02 - Base de données & PostGIS <cours3>
-03 - Contrôle qualité <cq>
-04 - Formats ESRI <fe>
-05 - Télédétection <tel>
-06 - Python & PyQGIS <pp>
-07 - Données & interopérabilité <com>
-08 - Géomatique, SIG & 3D <3d>
 ```

@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="fr" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyQGIS &mdash; Documentation CPGEOM</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=37fadd65" />
+
+  
+    <link rel="shortcut icon" href="_static/cpgeom-logo.svg"/>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5a393913"></script>
+      <script src="_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+      <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Données &amp; Interopérabilité" href="donnees-interoperabilite.html" />
+    <link rel="prev" title="Introduction de Python" href="python-introduction.html" />
+ 
+
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Documentation CPGEOM
+              <img src="_static/cpgeom-logo.svg" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Rechercher docs" aria-label="Rechercher docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Menu principal</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="contexte.html">Contexte</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="contexte.html#objectifs-du-site">Objectifs du site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contexte.html#organisation-generale">Organisation générale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="contexte.html#comment-lire-la-documentation">Comment lire la documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gestion-projet.html">Gestion de projet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gestion-type.html">Type de gestion de projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gestion-type.html#approches-possibles">Approches possibles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gestion-type.html#a-completer">À compléter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gestion-perimetres.html">Périmètres du projet</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gestion-perimetres.html#elements-a-definir">Éléments à définir</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gestion-repartition-taches.html">Répartition des tâches</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gestion-repartition-taches.html#tableau-de-suivi-conseille">Tableau de suivi conseillé</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gestion-repartition-taches.html#methodes-utiles">Méthodes utiles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gestion-risques.html">Risques</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gestion-risques.html#registre-des-risques">Registre des risques</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gestion-risques.html#a-completer">À compléter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gestion-gouvernance.html">Gouvernance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gestion-gouvernance.html#points-a-preciser">Points à préciser</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gestion-projet.html#sous-blocs">Sous-blocs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gestion-projet.html#livrables-utiles">Livrables utiles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="base-donnees.html">Base de données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="bdd-introduction.html">Introduction de la base de données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bdd-introduction.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bdd-introduction.html#requetes-a-maitriser">Requêtes à maîtriser</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bdd-admin-pgsql.html">Admin BDD &amp; PgSQL</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bdd-admin-pgsql.html#sujets-a-documenter">Sujets à documenter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bdd-admin-pgsql.html#commandes-a-ajouter">Commandes à ajouter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bdd-postgis.html">PostGIS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="bdd-postgis.html#notions-cles">Notions clés</a></li>
+<li class="toctree-l3"><a class="reference internal" href="bdd-postgis.html#exemples-de-fonctions">Exemples de fonctions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="base-donnees.html#sous-blocs">Sous-blocs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="base-donnees.html#competences-visees">Compétences visées</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="controle-qualite-donnees.html">Contrôle qualité des données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cq-iso-19115.html">ISO 19115</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cq-iso-19115.html#informations-a-documenter">Informations à documenter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cq-aspect-juridique.html">Aspect juridique</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cq-aspect-juridique.html#points-de-vigilance">Points de vigilance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="controle-qualite-donnees.html#criteres-de-controle">Critères de contrôle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="controle-qualite-donnees.html#livrables-utiles">Livrables utiles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="formats-esri.html">Formats ESRI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="formats-esri.html#formats-a-connaitre">Formats à connaître</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formats-esri.html#points-a-verifier">Points à vérifier</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="teledetection.html">Télédétection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="teledetection-introduction.html">Introduction de la télédétection</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teledetection-introduction.html#notions-cles">Notions clés</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teledetection-optique.html">Télédétection optique</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teledetection-optique.html#usages-frequents">Usages fréquents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teledetection-optique.html#points-de-vigilance">Points de vigilance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teledetection-lidar.html">Télédétection LiDAR</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teledetection-lidar.html#produits-courants">Produits courants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teledetection-lidar.html#a-completer">À compléter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teledetection-radar.html">Télédétection Radar</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="teledetection-radar.html#notions-a-documenter">Notions à documenter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="teledetection-radar.html#usages">Usages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="teledetection.html#sous-blocs">Sous-blocs</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="python-pyqgis.html">Python &amp; PyQGIS</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="python-introduction.html">Introduction de Python</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="python-introduction.html#bases-a-maitriser">Bases à maîtriser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="python-introduction.html#a-ajouter">À ajouter</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">PyQGIS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#exemples-d-usages">Exemples d’usages</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="python-pyqgis.html#sous-blocs">Sous-blocs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="python-pyqgis.html#exemples-a-ajouter">Exemples à ajouter</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="donnees-interoperabilite.html">Données &amp; Interopérabilité</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="donnees-vrt.html">VRT</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="donnees-vrt.html#usages">Usages</a></li>
+<li class="toctree-l3"><a class="reference internal" href="donnees-vrt.html#points-a-verifier">Points à vérifier</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="donnees-droit.html">Droit de données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="donnees-droit.html#questions-a-poser">Questions à poser</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="donnees-cycle.html">Cycle de données</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="donnees-cycle.html#etapes">Étapes</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="donnees-metadonnees.html">Métadonnées</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="donnees-metadonnees.html#champs-utiles">Champs utiles</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="donnees-interoperabilite.html#sous-blocs">Sous-blocs</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modifier.html">Comment modifier le site</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#regle-simple">Règle simple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#modifier-une-page">Modifier une page</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#ajouter-un-sous-bloc">Ajouter un sous-bloc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#ajouter-un-bloc-principal">Ajouter un bloc principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#generer-le-site">Générer le site</a></li>
+<li class="toctree-l2"><a class="reference internal" href="modifier.html#publier">Publier</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Documentation CPGEOM</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content style-external-links">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="python-pyqgis.html">Python &amp; PyQGIS</a></li>
+      <li class="breadcrumb-item active">PyQGIS</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pyqgis.md.txt" rel="nofollow"> Afficher la source de la page</a>
+      </li>
+  </ul><div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Sequential page navigation">
+        <a href="python-introduction.html" class="btn btn-neutral float-left" title="Introduction de Python" accesskey="p"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="donnees-interoperabilite.html" class="btn btn-neutral float-right" title="Données &amp; Interopérabilité" accesskey="n">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+  </div>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="pyqgis">
+<h1>PyQGIS<a class="headerlink" href="#pyqgis" title="Lien vers cette rubrique"></a></h1>
+<p>PyQGIS est l’API Python de QGIS. Elle permet de manipuler des couches, lancer des traitements et automatiser des workflows.</p>
+<section id="exemples-d-usages">
+<h2>Exemples d’usages<a class="headerlink" href="#exemples-d-usages" title="Lien vers cette rubrique"></a></h2>
+<ul class="simple">
+<li><p>Charger une couche dans QGIS.</p></li>
+<li><p>Lire les attributs d’une couche.</p></li>
+<li><p>Lancer un outil de traitement.</p></li>
+<li><p>Exporter un résultat.</p></li>
+<li><p>Créer un script réutilisable.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Astuce</p>
+<p>Documente chaque script avec son objectif, ses entrées, ses sorties et les paramètres importants.</p>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pied de page">
+        <a href="python-introduction.html" class="btn btn-neutral float-left" title="Introduction de Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Précédent</a>
+        <a href="donnees-interoperabilite.html" class="btn btn-neutral float-right" title="Données &amp; Interopérabilité" accesskey="n" rel="next">Suivant <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Droits d'auteur .</p>
+  </div>
+
+  Compilé avec <a href="https://www.sphinx-doc.org/">Sphinx</a> en utilisant un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">thème</a>
+    fourni par <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
