@@ -22,6 +22,7 @@ Gouvernance <gestion-gouvernance>
 | [Répartition des tâches](gestion-repartition-taches.md) | Rôles, planning, responsabilités et suivi d'avancement. |
 | [Risques](gestion-risques.md) | Identification, analyse, priorisation et plan de réponse. |
 | [Gouvernance](gestion-gouvernance.md) | Instances, décisions, communication et validation. |
+| [Budget](gestion-budget.md) | Instances, décisions, communication et validation. 
 
 ## Livrables utiles
 
