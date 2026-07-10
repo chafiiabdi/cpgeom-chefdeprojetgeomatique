@@ -1,48 +1,40 @@
 # Documentation CPGEOM
 
-Ce dépôt contient la documentation de formation **CPGEOM - Chef de projet géomatique**.
+Ce dépôt utilise maintenant une version **basique HTML/CSS** pour GitHub Pages.
 
-## Où écrire ?
+## Fichiers à modifier
 
-Écris et modifie les contenus dans `source/`.
-
-| Dossier | Rôle |
+| Besoin | Fichier |
 |---|---|
-| `source/` | Pages Markdown à modifier. |
-| `source/_static/` | Logo, images de style et CSS. |
-| `docs/` | Site HTML généré pour GitHub Pages. |
+| Modifier le contenu, les titres, les textes et le menu | `docs/index.html` |
+| Modifier les couleurs, tailles, espacements et la barre latérale | `docs/style.css` |
+| Modifier le logo | `docs/_static/cpgeom-logo.svg` |
 
-## Menu principal
+## Règle simple
 
-Le menu principal est défini dans `source/index.md`.
-
-Les sous-menus sont définis dans la page du bloc parent, par exemple `source/gestion-projet.md` pour les sous-pages de Gestion de projet.
-
-## Générer le site
-
-Commande recommandée sous PowerShell :
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\build-docs.ps1
+```text
+docs/index.html = contenu du site
+docs/style.css  = apparence du site
 ```
 
-Commande Sphinx directe :
+Le dossier `source/` vient de l'ancienne version Sphinx. Tu peux le garder comme sauvegarde, mais il n'est plus nécessaire pour modifier la page basique.
+
+## Publier les modifications
+
+Depuis le dossier du projet :
 
 ```powershell
-python -m sphinx -b html source docs
-```
-
-## Publier
-
-```powershell
-git add source docs README.md build-docs.ps1
-git commit -m "Mise à jour documentation"
+git add -A
+git commit -m "Modifier documentation"
 git push origin main
 ```
 
-## Règle à retenir
+## Page affichée par défaut
+
+GitHub Pages affiche automatiquement :
 
 ```text
-source/ = contenu à modifier
-docs/   = site publié généré
+docs/index.html
 ```
+
+Il n'y a plus besoin de lancer `build-docs.ps1` pour cette version basique.
